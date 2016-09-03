@@ -1,0 +1,50 @@
+@import 'https://fonts.googleapis.com/css?family=Baumans|Lobster+Two|Playfair+Display+SC';
+
+body{
+    font-family: 'Baumans';
+    margin: 0;
+    padding: 0;
+    background:#F2EFDF;
+}
+
+#body-container{
+    width:80%;
+    margin-left:10%;
+    background: rgba(255,255,255,0.8);
+    height:1000px;
+}
+
+#background-animation{
+    position: fixed;
+    font-family:'Playfair Display SC';
+    width: 100%;
+    height:100%;
+    z-index: -1;
+}
+
+.letter{
+    color: #292929;
+    display: inline;
+    position: fixed;
+    transition:all 3s ease-in-out ;
+}
+
+#header{
+    width:100%;
+    height:100px;
+    background:rgba(255,0,0,0.9);
+}
+
+#big-title{
+    text-align: right;
+    display: inline-block;
+    float:right;
+    font-family: 'Lobster Two';
+    font-size: 30px;
+    color:white;
+    margin-right:20px;
+}
+
+#logo-animation{
+    display: inline-block;
+}
