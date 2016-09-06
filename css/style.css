@@ -22,12 +22,12 @@ body{
     z-index: -1;
 }
 
-.letter{
-    color: #292929;
-    display: inline;
-    position: fixed;
-    transition:all 3s ease-in-out ;
-}
+/*.letter{*/
+    /*color: rgba(29,29,29,1);*/
+    /*display: inline;*/
+    /*position: fixed;*/
+    /*transition:all 3s ease-in-out ;*/
+/*}*/
 
 #header{
     width:100%;
