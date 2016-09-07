@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded',function(){
         newDiv.style.display = 'inline';
         newDiv.style.position = 'fixed';
         newDiv.style.marginTop = '-20%';
-        newDiv.style.fontSize = Math.random()*120+40+'px'
+        newDiv.style.fontSize = Math.random()*80+80+'px'
         pos.push(-20-Math.random()*30);
-        v.push(Math.random()*0.1+0.05);
+        v.push(Math.random()*0.05+0.01);
         newDiv.className = 'letter';
         big.appendChild(newDiv)
     }
@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded',function(){
                 letters.style.marginTop = pos[i]+'%';
                 if(pos[i]>100){
                     letters.innerHTML = list[parseInt(Math.random()*25)];
-                    letters.style.fontSize = Math.random()*120+40+'px'
+                    letters.style.fontSize = Math.random()*80+80+'px'
                     pos[i] = -10;
                     letters.style.marginLeft = Math.random()*100+'%';
                 }
             }
-        },10);
+        },1);
     }
 
     timer();
