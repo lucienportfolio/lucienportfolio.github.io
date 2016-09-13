@@ -4,8 +4,40 @@ var a = [];
 var pos = [];
 var v = [];
 
+var controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({triggerElement: "#title"})
+    .setClassToggle("#nav-1","active")
+    .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#about"})
+    .setClassToggle("#nav-2","active")
+    .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#work"})
+    .setClassToggle("#nav-3","active")
+    .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#contact"})
+    .setClassToggle("#nav-4","active")
+    .addTo(controller);
+
+
+
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
 document.addEventListener('DOMContentLoaded',function(){
-    for(var i = 0; i<60; i++){
+    for(var i = 0; i<30; i++){
         var big = document.getElementById('background-animation');
         var newDiv = document.createElement('div');
         newDiv.innerHTML = list[parseInt(Math.random()*25)];
@@ -13,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(){
         newDiv.style.display = 'inline';
         newDiv.style.position = 'fixed';
         newDiv.style.marginTop = '-20%';
-        newDiv.style.fontSize = Math.random()*80+80+'px'
+        newDiv.style.fontSize = Math.random()*80+140+'px'
         pos.push(-20-Math.random()*30);
         v.push(Math.random()*0.05+0.01);
         newDiv.className = 'letter';
@@ -22,14 +54,14 @@ document.addEventListener('DOMContentLoaded',function(){
 
     function timer(){
         setInterval(function(){
-            for(var i = 0; i<200; i++){
+            for(var i = 0; i<30; i++){
                 var letters = document.getElementsByClassName('letter')[i];
                 pos[i] = pos[i]+=v[i];
                 letters.style.marginTop = pos[i]+'%';
                 if(pos[i]>100){
                     letters.innerHTML = list[parseInt(Math.random()*25)];
-                    letters.style.fontSize = Math.random()*80+80+'px'
-                    pos[i] = -10;
+                    letters.style.fontSize = Math.random()*80+140+'px'
+                    pos[i] = -20;
                     letters.style.marginLeft = Math.random()*100+'%';
                 }
             }
