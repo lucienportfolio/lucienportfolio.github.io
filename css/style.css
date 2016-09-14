@@ -63,10 +63,11 @@ body{
     background:rgba(255,40,40,1);
     text-align: center;
     height:100vh;
+    cursor: url("../images/mouse-1.png"),url(""),auto;
 }
 
 #work{
-    height:5000px;
+    height:1000px;
 }
 
 #about{
@@ -74,8 +75,17 @@ body{
     text-align: center;
 }
 
+#blog{
+    height:1000px;
+}
+
 #contact{
     height:1000px;
+}
+
+.parts{
+    padding-top:5px;
+    margin-top:10px;
 }
 
 #header{
@@ -112,4 +122,30 @@ body{
 
 #logo-animation{
     display: inline-block;
+}
+
+.part-title{
+    color:rgba(55,55,55,1);
+    font-size: 55px;
+    text-align: left;
+    margin-left:5%;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.line-1{
+    margin-top:2px;
+    margin-left:5%;
+    width:2%;
+    height:5px;
+    background:rgba(55,55,55,0);
+    transition: all 1s ease-in-out;
+}
+
+.line-2{
+    margin-top:2px;
+    margin-left: 5%;
+    width:30%;
+    height:5px;
+    background:rgba(55,55,55,1);
 }

@@ -15,11 +15,28 @@ new ScrollMagic.Scene({triggerElement: "#about"})
 new ScrollMagic.Scene({triggerElement: "#work"})
     .setClassToggle("#nav-3","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#contact"})
+new ScrollMagic.Scene({triggerElement: "#blog"})
     .setClassToggle("#nav-4","active")
     .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#contact"})
+    .setClassToggle("#nav-5","active")
+    .addTo(controller);
 
+new ScrollMagic.Scene({triggerElement: "#about", duration: 600})
+    .setClassToggle("#line-about", "line-2")
+    .addTo(controller);
 
+new ScrollMagic.Scene({triggerElement: "#work", duration: 600})
+    .setClassToggle("#line-work", "line-2")
+    .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#blog", duration: 600})
+    .setClassToggle("#line-blog", "line-2")
+    .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#contact", duration: 600})
+    .setClassToggle("#line-contact", "line-2")
+    .addTo(controller);
 
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {

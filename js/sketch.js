@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill(255,40,40,80);
+  fill(255,40,40,70);
   rect(0,0,width,height);
   fill(255,255,255,100);
   for(var i = 0; i<ballNum; i++){
@@ -30,7 +30,7 @@ function draw() {
   }
   for(var i = 0; i<ballNum; i++){
     for(var j = ballNum; j>i; j--){
-      if(dist(posX[j],posY[j],posX[i],posY[i])<70){
+      if(dist(posX[j],posY[j],posX[i],posY[i])<80){
         stroke(255);
         line(posX[j],posY[j],posX[i],posY[i])
       }
