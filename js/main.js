@@ -54,7 +54,7 @@ $(function() {
 });
 
 document.addEventListener('DOMContentLoaded',function(){
-    for(var i = 0; i<30; i++){
+    for(var i = 0; i<20; i++){
         var big = document.getElementById('background-animation');
         var newDiv = document.createElement('div');
         newDiv.innerHTML = list[parseInt(Math.random()*25)];
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded',function(){
         newDiv.style.position = 'fixed';
         newDiv.style.marginTop = '-20%';
         newDiv.style.fontSize = Math.random()*80+140+'px'
-        pos.push(-20-Math.random()*30);
+        pos.push(-20-Math.random()*20);
         v.push(Math.random()*0.05+0.01);
         newDiv.className = 'letter';
         big.appendChild(newDiv)
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     function timer(){
         setInterval(function(){
-            for(var i = 0; i<30; i++){
+            for(var i = 0; i<20; i++){
                 var letters = document.getElementsByClassName('letter')[i];
                 pos[i] = pos[i]+=v[i];
                 letters.style.marginTop = pos[i]+'%';

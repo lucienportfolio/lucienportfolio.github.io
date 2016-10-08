@@ -22,7 +22,7 @@ function draw() {
   rect(0,0,width,height);
   fill(255,255,255,100);
   for(var i = 0; i<ballNum; i++){
-    ellipse(posX[i],posY[i],3,3);
+    ellipse(posX[i],posY[i],1,1);
     posX[i]+=spdX[i];
     posY[i]+=spdY[i];
     if(posX[i]<0||posX[i]>width) spdX[i] = -spdX[i];
