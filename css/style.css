@@ -1,7 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Baumans|Lobster+Two|Playfair+Display+SC';
+@import 'https://fonts.googleapis.com/css?family=Lobster+Two|Playfair+Display+SC';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
 body{
-    font-family: 'Baumans';
+    font-family: 'Raleway';
     margin: 0;
     padding: 0;
     background:#F2EFDF;
@@ -68,7 +69,6 @@ body{
 }
 
 #work{
-    height:1000px;
 }
 
 #about{
@@ -131,13 +131,15 @@ body{
     margin-left:5%;
     margin-top:0px;
     margin-bottom:0px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
 }
 
 .line-1{
     margin-top:2px;
     margin-left:5%;
     width:2%;
-    height:5px;
+    height:7px;
     background:rgba(55,55,55,0);
     transition: all 1s ease-in-out;
 }
@@ -146,7 +148,7 @@ body{
     margin-top:2px;
     margin-left: 5%;
     width:30%;
-    height:5px;
+    height:7px;
     background:rgba(55,55,55,1);
 }
 
@@ -196,6 +198,7 @@ body{
 #resume-body-container{
     width:80%;
     margin-left:10%;
+    font-weight: 600;
 }
 
 .resume-back-1{
@@ -432,4 +435,151 @@ body{
 .unity{
     width:18%;
     background:rgba(255,0,36,0.56);
+}
+
+#work-container{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+#work-row-1{
+    width:90%;
+    margin-left:5%;
+    height:50vh;
+    display: flex;
+}
+
+#work-row-2{
+    width:90%;
+    margin-left:5%;
+    height:38vh;
+    display: flex;
+}
+
+#work-row-3{
+    width:90%;
+    margin-left:5%;
+    height:42vh;
+    display: flex;
+}
+
+#work-1{
+    background: red;
+    width: 65%;
+}
+
+#work-2{
+    background: blue;
+    width: 35%;
+}
+
+#work-3{
+    background: yellow;
+    width: 50%;
+}
+
+#work-4{
+    background: green;
+    width: 50%;
+}
+
+#work-5{
+    background: orange;
+    width: 25%;
+}
+
+#work-6{
+    background: purple;
+    width: 50%;
+}
+
+#work-7{
+    background: darkred;
+    width: 25%;
+}
+
+.work-item{
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+    filter: grayscale(0);
+    transition: all 0.5s ease-in-out;
+    background-size: 100%;
+    background-position: center;
+}
+
+.work-title{
+    width:300px;
+    position: absolute;
+    display: inline;
+    z-index: 1;
+    font-weight: 500;
+    color:white;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    font-size: 15px;
+    color:lightgray;
+}
+
+.work-title span{
+    font-size: 28px;
+    color: aquamarine;
+}
+
+#work-1-title{
+    left:17%;
+    top:120%;
+}
+
+#work-2-title{
+    left:64%;
+    top:120%;
+}
+
+#work-3-title{
+    left:17%;
+    top:170%;
+}
+
+#work-4-title{
+    left:53%;
+    top:170%;
+}
+
+#work-5-title{
+    width:13%;
+    left:17%;
+    top:208%;
+}
+
+#work-6-title{
+    left:35%;
+    top:208%;
+}
+
+#work-7-title{
+    width:13%;
+    left:71%;
+    top:208%;
+}
+
+#more{
+    margin-top:20px;
+    padding:15px;
+    width:20%;
+    margin-left: 40%;
+    text-align: center;
+    background:rgba(255,35,35,1);
+    color:white;
+    font-size:20px;
+    cursor: pointer;
+    transition: background 0.2s ease-out,width 0.4s ease-out,margin-left 0.4s ease-out,color 0.3s ease-out;
+}
+
+#more:hover{
+    background:rgba(255,35,35,0);
+    color:rgba(255,35,35,1);
+    width:90%;
+    margin-left: 5%;
 }

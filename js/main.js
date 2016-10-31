@@ -9,13 +9,13 @@ var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({triggerElement: "#title"})
     .setClassToggle("#nav-1","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#about"})
+new ScrollMagic.Scene({triggerElement: "#work"})
     .setClassToggle("#nav-2","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#work"})
+new ScrollMagic.Scene({triggerElement: "#blog"})
     .setClassToggle("#nav-3","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#blog"})
+new ScrollMagic.Scene({triggerElement: "#about"})
     .setClassToggle("#nav-4","active")
     .addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#contact"})
@@ -53,7 +53,143 @@ $(function() {
     });
 });
 
+var mouseOn = [0,0,0,0,0,0,0];
+
+function loadWorks(){
+    $('#work-1')[0].style.background = "url(./images/works-1.jpg)"
+    $('#work-1')[0].style.backgroundSize = "100%";
+    $('#work-1')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-1')[0].style.backgroundPosition = "center";
+    console.log( $('#work-1-title'));
+    $('#work-1').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-1-title')[0].style.opacity = "1";
+        mouseOn[0] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-1-title')[0].style.opacity = "0";
+        mouseOn[0] = 0;
+    } );
+
+    $('#work-2')[0].style.background = "url(./images/works-2.jpg)";
+    $('#work-2')[0].style.backgroundSize = "100%";
+    $('#work-2')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-2')[0].style.backgroundPosition = "center";
+    console.log( $('#work-1-title'));
+    $('#work-2').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-2-title')[0].style.opacity = "1";
+        mouseOn[1] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-2-title')[0].style.opacity = "0";
+        mouseOn[1] =0;
+    } );
+
+    $('#work-3')[0].style.background = "url(./images/works-3.jpg)";
+    $('#work-3')[0].style.backgroundSize = "100%";
+    $('#work-3')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-3')[0].style.backgroundPosition = "center";
+    console.log( $('#work-3-title'));
+    $('#work-3').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-3-title')[0].style.opacity = "1";
+        mouseOn[2] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-3-title')[0].style.opacity = "0";
+        mouseOn[2] = 0;
+    } );
+
+    $('#work-4')[0].style.background = "url(./images/works-4.jpg)";
+    $('#work-4')[0].style.backgroundSize = "100%";
+    $('#work-4')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-4')[0].style.backgroundPosition = "center";
+    console.log( $('#work-3-title'));
+    $('#work-4').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-4-title')[0].style.opacity = "1";
+        mouseOn[3] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-4-title')[0].style.opacity = "0";
+        mouseOn[3] = 0;
+    } );
+
+    $('#work-5')[0].style.background = "url(./images/works-5.jpg)";
+    $('#work-5')[0].style.backgroundSize = "100%";
+    $('#work-5')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-5')[0].style.backgroundPosition = "center";
+    console.log( $('#work-5-title'));
+    $('#work-5').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-5-title')[0].style.opacity = "1";
+        mouseOn[4] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-5-title')[0].style.opacity = "0";
+        mouseOn[4] = 0;
+    } );
+
+    $('#work-6')[0].style.background = "url(./images/works-6.jpg)";
+    $('#work-6')[0].style.backgroundSize = "100%";
+    $('#work-6')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-6')[0].style.backgroundPosition = "center";
+    console.log( $('#work-6-title'));
+    $('#work-6').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-6-title')[0].style.opacity = "1";
+        mouseOn[5] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-6-title')[0].style.opacity = "0";
+        mouseOn[5] = 0;
+    } );
+
+    $('#work-7')[0].style.background = "url(./images/works-2.jpg)";
+    $('#work-7')[0].style.backgroundSize = "100%";
+    $('#work-7')[0].style.backgroundRepeat = "no-repeat";
+    $('#work-7')[0].style.backgroundPosition = "center";
+    console.log( $('#work-7-title'));
+    $('#work-7').hover(function(){
+        $(this)[0].style.backgroundSize="200%";
+        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
+        $('#work-7-title')[0].style.opacity = "1";
+        mouseOn[6] = 1;
+    },function(){
+        $(this)[0].style.backgroundSize="100%";
+        $(this)[0].style.filter = "brightness(1) grayscale(0)"
+        $('#work-7-title')[0].style.opacity = "0";
+        mouseOn[6] = 0;
+    } );
+}
+
+window.setInterval(timeInterval,500);
+console.log($('.work-item'));
+function timeInterval(){
+    for(var i = 0; i < $('.work-item').length; i++){
+        if(mouseOn[i]==0){
+        //$('.work-title')[i].style.opacity = Math.random()*0.5;
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded',function(){
+
+    loadWorks();
+
     for(var i = 0; i<20; i++){
         var big = document.getElementById('background-animation');
         var newDiv = document.createElement('div');
