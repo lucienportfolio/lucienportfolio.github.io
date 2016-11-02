@@ -1,54 +1,91 @@
-var ballNum = 80;
-var posX = [];
-var posY = [];
-var spdX = [];
-var spdY = [];
+var ballNum = 200;
+var friction = 0.995;
+var g = [];
+var pos = [];
+var vel = [];
+var acc = [];
+var sizeBall = [];
+var alphaBall = [];
+var alphaGo = 0;
 
 function setup() {
   var myCanvas = createCanvas(1000,650);
   background(30,30,30);
   myCanvas.parent('title');
   for(var i = 0; i<ballNum; i++){
-    posX.push(Math.random()*width);
-    posY.push(Math.random()*height);
-    spdX.push(1-2*Math.random());
-    spdY.push(1-2*Math.random());
+    pos.push([i*i*sin(0.1*i)/80+width/2,i*i*cos(0.1*i)/80+height/2]);
+    var graX = (pos[i][0]-width/2)/100;
+    var graY = (pos[i][1]-height/2)/100;
+    vel.push([0,0]);
+    acc.push([graX,graY]);
+    console.log(pos[i][0]+" "+pos[i][1]);
+    sizeBall.push(5);
+    alphaBall.push(255);
+    //spdX.push(1-2*Math.random());
+    //spdY.push(1-2*Math.random());
   }
 }
 
 function draw() {
+  console.log(pos.length);
   noStroke();
-  fill(30,30,30,70);
+  fill(30,30,30,150);
   rect(0,0,width,height);
-  fill(255,255,255,100);
   for(var i = 0; i<ballNum; i++){
-    ellipse(posX[i],posY[i],1,1);
-    posX[i]+=spdX[i];
-    posY[i]+=spdY[i];
-    if(posX[i]<0||posX[i]>width) spdX[i] = -spdX[i];
-    if(posY[i]<0||posY[i]>height) spdY[i] = -spdY[i];
+    var distance = dist(pos[i][0], pos[i][1], width/2, height/2);
+    sizeBall[i] = map(distance,0,width/2,0,50);
+    alphaBall[i] = map(distance,0,width/2,255,0);
+    fill(255,255,255,alphaBall[i]-alphaGo);
+    ellipse(pos[i][0],pos[i][1],sizeBall[i],sizeBall[i]);
+    pos[i][0]+=vel[i][0];
+    pos[i][1]+=vel[i][1];
+    vel[i][0]+=acc[i][0];
+    vel[i][1]+=acc[i][1];
+    vel[i][0]*=friction;
+    vel[i][1]*=friction;
+    if(alphaGo>255) alphaGo=255;
+    alphaGo+=0.0002;
+    if(pos[i][0]<0||pos[i][0]>width) vel[i][0] = -vel[i][0];
+    if(pos[i][1]<0||pos[i][1]>height) vel[i][1] = -vel[i][1];
+    if(pos[i][0]<-20||pos[i][0]>width+20) pos[i][0] = width/2;
+    if(pos[i][1]<-20||pos[i][1]>height+20) pos[i][1] = height/2;
   }
-  for(var i = 0; i<ballNum; i++){
-    for(var j = ballNum; j>i; j--){
-      if(dist(posX[j],posY[j],posX[i],posY[i])<80){
-        stroke(255);
-        line(posX[j],posY[j],posX[i],posY[i])
-      }
+  //for(var i = 0; i<ballNum; i++){
+  //  for(var j = ballNum; j>i; j--){
+  //    if(dist(pos[j][0],pos[j][1],pos[i][0],pos[i][1])<0){
+  //      stroke(255);
+  //      line(pos[j][0],pos[j][1],pos[i][0],pos[i][1])
+  //    }
+  //  }
+  //}
+
+  if(mouseIsPressed&&mouseX<width&&mouseX>0&&mouseY>0&&mouseY<height){
+    //posX.push(mouseX);
+    //posY.push(mouseY);
+    //spdX.push(1-2*Math.random());
+    //spdY.push(1-2*Math.random());
+    //ballNum++;
+    for(var i = 0; i<ballNum; i++){
+      var x = mouseX - pos[i][0];
+      var y = mouseY - pos[i][1];
+      acc[i][0] += 0.0000001*x*i;
+      acc[i][1] += 0.0000001*y*i;
+      if(alphaGo>-50) alphaGo-=0.01;
+    }
+  }else{
+
+    for(var i = 0; i<ballNum; i++){
+      acc[i][0] = 0;
+      acc[i][1] = 0;
+      alphaGo+=0.0002;
     }
   }
 
-  if(mouseIsPressed&&mouseX<width&&mouseX>0&&mouseY>0&&mouseY<height){
-    posX.push(mouseX);
-    posY.push(mouseY);
-    spdX.push(1-2*Math.random());
-    spdY.push(1-2*Math.random());
-    ballNum++;
-  }
-  if(ballNum>80){
-    posX.splice(0,ballNum-80);
-    posY.splice(0,ballNum-80);
-    spdX.splice(0,ballNum-80);
-    spdY.splice(0,ballNum-80);
-    ballNum = 80;
-  }
+  //if(ballNum>80){
+  //  posX.splice(0,ballNum-80);
+  //  posY.splice(0,ballNum-80);
+  //  spdX.splice(0,ballNum-80);
+  //  spdY.splice(0,ballNum-80);
+  //  ballNum = 80;
+  //}
 }

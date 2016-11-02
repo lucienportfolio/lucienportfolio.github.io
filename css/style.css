@@ -30,6 +30,17 @@ body{
     transition: opacity 0.5s ease-in-out;
 }
 
+#work-cover{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    margin-left:0%;
+    background: #171717;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
 #background-animation{
     position: fixed;
     font-family:'Playfair Display SC';
@@ -43,6 +54,17 @@ body{
     margin-top:100px;
     margin-left: 91%;
     width:8%;
+    background:rgba(55,55,55,0.85);
+    text-align: center;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+#works-navigation{
+    position: fixed;
+    margin-top:100px;
+    margin-left: 84%;
+    width:15%;
     background:rgba(55,55,55,0.85);
     text-align: center;
     z-index: 1;
@@ -178,9 +200,9 @@ body{
 }
 
 #a-left{
-    width:40%;
+    width:25%;
     display: inline-block;
-    margin-left:10%;
+    margin-right:2%;
 }
 
 #a-right{
@@ -604,4 +626,41 @@ body{
     color:rgba(255,35,35,1);
     width:90%;
     margin-left: 5%;
+}
+
+#works-body-container{
+    width:100%;
+    margin-left:0%;
+    /*background: rgba(255,255,255,0.95);*/
+    background: #171717;
+    transition:all 0.8s ease-in-out;
+    margin-top:-280px;
+    opacity: 0;
+}
+
+#works-header-bg{
+    position: fixed;
+    z-index: -1;
+    height:200px;
+    top:-400px;
+    width:100%;
+    background-size: auto;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+#works-title{
+    color:white;
+    font-size:100px;
+    margin-left:-100%;
+    transition: all 1.5s ease-in-out;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+#works-header{
+    margin-top:0px;
+    padding-bottom:30px;
+    padding-top:30px;
+    background: rgba(30,30,30,1);
 }
