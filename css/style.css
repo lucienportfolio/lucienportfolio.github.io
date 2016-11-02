@@ -5,14 +5,29 @@ body{
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    background:#F2EFDF;
+    background:#171717;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 #body-container{
-    width:80%;
-    margin-left:10%;
-    background: rgba(255,255,255,0.95);
+    width:100%;
+    margin-left:0%;
+    /*background: rgba(255,255,255,0.95);*/
+    background: rgba(30,30,30,0.8);
+    transition:all 0.5s ease-in;
+}
+
+#body-cover{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    margin-left:0%;
+    background: #171717;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #background-animation{
@@ -30,6 +45,8 @@ body{
     width:8%;
     background:rgba(55,55,55,0.85);
     text-align: center;
+    z-index: 1;
+    transition: all 1s ease-in-out;
 }
 
 #navigation .nav{
@@ -39,7 +56,7 @@ body{
 }
 
 .nav{
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin:0;
     cursor: pointer;
 }
@@ -54,7 +71,7 @@ body{
 }
 
 .nav:hover{
-    background: rgba(55,55,55,0.95);
+    background: rgba(180,180,180,0.95);
 }
 
 .active{
@@ -62,7 +79,7 @@ body{
 }
 
 #title{
-    background:rgba(255,40,40,1);
+    background:rgba(30,30,30,1);
     text-align: center;
     height:100vh;
     cursor: url("../images/mouse-1.png"),url(""),auto;
@@ -125,7 +142,7 @@ body{
 }
 
 .part-title{
-    color:rgba(55,55,55,1);
+    color:rgba(255,255,255,1);
     font-size: 55px;
     text-align: left;
     margin-left:5%;
@@ -140,7 +157,7 @@ body{
     margin-left:5%;
     width:2%;
     height:7px;
-    background:rgba(55,55,55,0);
+    background:rgba(255,255,255,0);
     transition: all 1s ease-in-out;
 }
 
@@ -149,7 +166,7 @@ body{
     margin-left: 5%;
     width:30%;
     height:7px;
-    background:rgba(55,55,55,1);
+    background:rgba(255,255,255,1);
 }
 
 #about-container{
@@ -175,6 +192,7 @@ body{
 }
 
 #a-right p{
+    color:#DAD9DB;
     margin-left: 5%;
     font-size: 16px;
 }
@@ -190,9 +208,9 @@ body{
 }
 
 #cv:hover{
-    color:#1D1D1F;
+    color:#DAD9DB;
     padding-left:50%;
-    background:#1D1D1F;
+    background:#DAD9DB;
 }
 
 #resume-body-container{
@@ -447,6 +465,7 @@ body{
     margin-left:5%;
     height:50vh;
     display: flex;
+    transition: all 1s ease-in-out;
 }
 
 #work-row-2{
@@ -454,6 +473,7 @@ body{
     margin-left:5%;
     height:38vh;
     display: flex;
+    transition: all 1s ease-in-out;
 }
 
 #work-row-3{
@@ -461,6 +481,7 @@ body{
     margin-left:5%;
     height:42vh;
     display: flex;
+    transition: all 1s ease-in-out;
 }
 
 #work-1{
@@ -520,6 +541,7 @@ body{
     transition: all 0.6s ease-in-out;
     font-size: 15px;
     color:lightgray;
+    transition:all 0.5s ease-in-out;
 }
 
 .work-title span{
@@ -528,17 +550,17 @@ body{
 }
 
 #work-1-title{
-    left:17%;
+    left:8%;
     top:120%;
 }
 
 #work-2-title{
-    left:64%;
+    left:67%;
     top:120%;
 }
 
 #work-3-title{
-    left:17%;
+    left:8%;
     top:170%;
 }
 
@@ -549,18 +571,18 @@ body{
 
 #work-5-title{
     width:13%;
-    left:17%;
+    left:8%;
     top:208%;
 }
 
 #work-6-title{
-    left:35%;
+    left:30%;
     top:208%;
 }
 
 #work-7-title{
     width:13%;
-    left:71%;
+    left:76%;
     top:208%;
 }
 

@@ -158,7 +158,7 @@ function loadWorks(){
         mouseOn[5] = 0;
     } );
 
-    $('#work-7')[0].style.background = "url(./images/works-2.jpg)";
+    $('#work-7')[0].style.background = "url(./images/works-7.jpg)";
     $('#work-7')[0].style.backgroundSize = "100%";
     $('#work-7')[0].style.backgroundRepeat = "no-repeat";
     $('#work-7')[0].style.backgroundPosition = "center";
@@ -176,15 +176,32 @@ function loadWorks(){
     } );
 }
 
-window.setInterval(timeInterval,500);
-console.log($('.work-item'));
-function timeInterval(){
-    for(var i = 0; i < $('.work-item').length; i++){
-        if(mouseOn[i]==0){
-        //$('.work-title')[i].style.opacity = Math.random()*0.5;
+function workClick(getCount){
+        $('#work-title')[0].style.marginLeft = "100%";
+        $('#navigation')[0].style.marginLeft = "100%";
+        $('#work-row-1')[0].style.marginLeft = "-100%";
+        $('#work-row-2')[0].style.marginLeft = "100%";
+        $('#work-row-3')[0].style.marginLeft = "-100%";
+        $('#body-cover')[0].style.zIndex = "1";
+        $('#body-cover')[0].style.opacity = "1";
+        for(var i= 1 ; i<8; i++) {
+            $('#work-' + i + '-title')[0].style.marginLeft = "-200%";
         }
+        setTimeout(function(){
+            window.location.href='./works.html?work='+getCount;
+        },1000);
     }
-}
+
+
+//window.setInterval(timeInterval,500);
+//console.log($('.work-item'));
+//function timeInterval(){
+//    for(var i = 0; i < $('.work-item').length; i++){
+//        if(mouseOn[i]==0){
+//        //$('.work-title')[i].style.opacity = Math.random()*0.5;
+//        }
+//    }
+//}
 
 document.addEventListener('DOMContentLoaded',function(){
 

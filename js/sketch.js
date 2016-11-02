@@ -6,7 +6,7 @@ var spdY = [];
 
 function setup() {
   var myCanvas = createCanvas(1000,650);
-  background(255,40,40);
+  background(30,30,30);
   myCanvas.parent('title');
   for(var i = 0; i<ballNum; i++){
     posX.push(Math.random()*width);
@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill(255,40,40,70);
+  fill(30,30,30,70);
   rect(0,0,width,height);
   fill(255,255,255,100);
   for(var i = 0; i<ballNum; i++){
