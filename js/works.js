@@ -16,22 +16,22 @@ console.log(workCount);
 
 var worksContent;
 
-$.ajax({
-    dataType: "json",
-    url: "./data.json",
-    //data: data,
-    //success: success
-});
+//$.ajax({
+//    dataType: "json",
+//    url: "./data.json",
+//    //data: data,
+//    //success: success
+//});
+//
+//$.getJSON("./json/data.json");
 
-$.getJSON("./json/data.json");
-
-//$.getJSON("./data.json", function(data){
-//    var strHtml; //存储数据的变量
-//    $.each(data,function(infoIndex,info){
-//        console.log(infoIndex);
-//        console.log(info);
-//    })
-//})
+$.getJSON("./data.json", function(data){
+    var strHtml; //存储数据的变量
+    $.each(data,function(infoIndex,info){
+        console.log(infoIndex);
+        console.log(info);
+    })
+})
 /**
  * Created by Lucien on 11/1/2016.
  */
