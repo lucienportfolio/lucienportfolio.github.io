@@ -4,8 +4,16 @@
    },
    {
       "title":"Taskloud",
+      "time":"2016",
+      "responsibility": "Independent project",
+      "type": "Bachelor Degree Thesis",
+      "skills": "Adobe Creative Cloud, Objective-C, MySQL, Node.js",
+      "final": "A schedule planner APP based on iOS, related server-side program and project documentation",
       "background":"../images/taskloud/bg.jpg",
-      "thumbnail":"../images/taskloud/tn.jpg"
+      "thumbnail":"../images/taskloud/tn.jpg",
+      "concept":["Since working and Studying has been playing the most important role in our lives, we have to deal with a great deal of various affairs everyday. Scheduling time more appropriately is very essential to us. Therefore, I developed this easy-to-use APP to manage our time and schdules which can meet our daily needs. But the existing APPs are usually too complicated for users to use and they don't really maximum the advantage of smart phone.",
+         "In this project, my intention is to develop an application which has a featur that allows users to manage others' schedule like adding new appointments. And I also used GPS in the application to let users get notification according to their position"],
+      "gallery":["../images/taskloud/1.jpg","../images/taskloud/2.jpg","../images/taskloud/3.jpg","../images/taskloud/4.jpg"]
    },
    {
       "title":"Light Up",
