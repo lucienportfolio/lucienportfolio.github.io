@@ -1,4 +1,5 @@
 window.location.href;
+var everLoaded = false;
 
 function getUrlParam(name)
 {
@@ -18,7 +19,8 @@ var fetchData = $.getJSON("../json/data.json", function(data){
             worksContent.push(
                 {
                     "title": info["title"],
-                    "bg": info["background"]
+                    "bg": info["background"],
+                    "tn": info["thumbnail"]
                 }
             )
         console.log('a');
@@ -34,12 +36,135 @@ var fetchData = $.getJSON("../json/data.json", function(data){
     });
 
 function show(){
-    $('#works-title')[0].innerHTML = worksContent[workCount].title;
-    $('#works-header-bg')[0].style.background = 'url('+worksContent[workCount].bg+')';
-    console.log('url+('+worksContent[workCount].bg+')');
+    if(workCount==0){
+        $('#works-title')[0].innerHTML = worksContent[1].title;
+        $('#works-header-bg')[0].style.background = 'url('+worksContent[1].bg+')';
+        moreWorks();
+    }else{
+        $('#works-title')[0].innerHTML = worksContent[workCount].title;
+        $('#works-header-bg')[0].style.background = 'url('+worksContent[workCount].bg+')';
+    }
 }
 
+$('#nav-1').click(function(){
+    $('#work-cover')[0].style.zIndex = '1';
+    setTimeout(function(){
+        $('#work-cover')[0].style.opacity = '1';
+        $('#works-title')[0].style.marginLeft="-100%";
+        $('#works-header-bg')[0].style.top="-400px";
+        $('#works-header-bg')[0].style.opacity="0";
+        $('#works-body-container')[0].style.marginTop="-200px";
+        $('#works-body-container')[0].style.opacity="0";
+        $('#works-navigation')[0].style.left="110%";
+    },200);
+    setTimeout(function(){
+        window.location.href='./index.html';
+    },1000);
+});
 
+$('#nav-3').click(function(){
+    $('#work-cover')[0].style.zIndex = '1';
+    setTimeout(function(){
+        $('#works-navigation')[0].style.left="150%";
+        $('#works-navigation')[0].style.opacity="0";
+        $('#work-cover')[0].style.opacity = '1';
+        $('#works-title')[0].style.marginLeft="100%";
+        $('#works-header-bg')[0].style.left="-100%";
+        $('#works-header-bg')[0].style.opacity="0";
+        $('#works-body-container')[0].style.marginLeft="100%";
+        $('#works-body-container')[0].style.opacity="0";
+    },200);
+    setTimeout(function(){
+        //if(workCount==0) workCount = worksContent.length-1;
+        if(workCount>1) workCount--;
+        else workCount = worksContent.length-1;
+        window.location.href='./works.html?work='+workCount;
+    },1000);
+});
+
+$('#nav-4').click(function(){
+    $('#work-cover')[0].style.zIndex = '1';
+    setTimeout(function(){
+        $('#works-navigation')[0].style.left="50%";
+        $('#works-navigation')[0].style.opacity="0";
+        $('#work-cover')[0].style.opacity = '1';
+        $('#works-title')[0].style.marginLeft="-100%";
+        $('#works-header-bg')[0].style.left="-100%";
+        $('#works-header-bg')[0].style.opacity="0";
+        $('#works-body-container')[0].style.marginLeft="-100%";
+        $('#works-body-container')[0].style.opacity="0";
+    },200);
+    setTimeout(function(){
+        if(workCount==0) workCount = 2;
+        if(workCount<worksContent.length-1) workCount++;
+        else workCount = 1;
+        window.location.href='./works.html?work='+workCount;
+    },1000);
+});
+
+$('#nav-2').click(function(){
+    moreWorks();
+    setTimeout(function(){
+    },200);
+});
+
+$('#close').click(function(){
+    $('#menu')[0].style.zIndex = "1";
+    $('#menu')[0].style.opacity = "0";
+    $('#works-navigation')[0].style.filter="blur(0px)";
+    $('#works-header-bg')[0].style.filter="blur(0px)";
+    $('#works-body-container')[0].style.filter="blur(0px)";
+    setTimeout(function(){
+        $('#menu')[0].style.zIndex = "-1";
+    },500);
+});
+
+function moreWorks(){
+    $('#menu')[0].style.zIndex = "1";
+    $('#menu')[0].style.opacity = "1";
+    $('#works-navigation')[0].style.filter="blur(10px)";
+    $('#works-header-bg')[0].style.filter="blur(10px)";
+    $('#works-body-container')[0].style.filter="blur(10px)";
+    if(everLoaded==false) loadWorks();
+}
+
+function mouseOverItem(count){
+    $('#'+count)[0].style.marginTop='0';
+}
+
+function mouseOutItem(count){
+    $('#'+count)[0].style.marginTop='100%';
+}
+
+function loadWorks(){
+    everLoaded = true;
+    for(var i = 1; i<worksContent.length;i++){
+        var col = (i-1)%3;
+        var newItem = $("<div class='menu-item' onclick='workClick("+i+")' onmouseover='mouseOverItem("+i+")' onmouseout='mouseOutItem("+i+")'></div>");
+        var newItemdescription = $("<div class='menu-description' id='"+i+"'></div>");
+        newItem[0].style.background= 'url('+worksContent[i].tn+')';
+        newItem[0].style.backgroundSize='100%';
+        newItem[0].style.backgroundPosition='center';
+        newItemdescription.html(worksContent[i].title);
+        newItem.append(newItemdescription);
+        console.log($('#menu-col-'+col));
+        $('#menu-col-'+col).append(newItem);
+    }
+}
+
+function workClick(getCount){
+    $('#work-cover')[0].style.zIndex = '1';
+    setTimeout(function(){
+        $('#menu')[0].style.opacity = "0";
+        $('#works-navigation')[0].style.opacity="0";
+        $('#work-cover')[0].style.opacity = '1';
+        $('#works-header-bg')[0].style.opacity="0";
+        $('#works-body-container')[0].style.opacity="0";
+    },200);
+    setTimeout(function(){
+        window.location.href='./works.html?work='+getCount;
+    },800);
+}
 
 document.addEventListener('DOMContentLoaded',function(){
     setTimeout(function(){
@@ -49,6 +174,7 @@ document.addEventListener('DOMContentLoaded',function(){
         $('#works-header-bg')[0].style.opacity="1";
         $('#works-body-container')[0].style.marginTop="200px";
         $('#works-body-container')[0].style.opacity="1";
+        $('#works-navigation')[0].style.left="84%";
     },300);
     setTimeout(function(){
         $('#work-cover')[0].style.zIndex = '-1';

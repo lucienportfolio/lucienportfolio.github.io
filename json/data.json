@@ -4,30 +4,42 @@
    },
    {
       "title":"Taskloud",
-      "background":"../images/taskloud/bg.jpg"
+      "background":"../images/taskloud/bg.jpg",
+      "thumbnail":"../images/taskloud/tn.jpg"
    },
    {
       "title":"Light Up",
-      "background":"./images/lightup/bg.jpg"
+      "background":"./images/lightup/bg.jpg",
+      "thumbnail":"../images/lightup/tn.jpg"
    },
    {
       "title":"Compile Youth",
-      "background":"./images/compileyouth/bg.jpg"
+      "background":"./images/compileyouth/bg.jpg",
+      "thumbnail":"../images/compileyouth/tn.jpg"
    },
    {
       "title":"Green Funeral",
-      "background":"./images/greenfuneral/bg.jpg"
+      "background":"./images/greenfuneral/bg.jpg",
+      "thumbnail":"../images/greenfuneral/tn.jpg"
    },
    {
       "title":"Inside Out",
-      "background":"./images/insideout/bg.jpg"
+      "background":"./images/insideout/bg.jpg",
+      "thumbnail":"../images/insideout/tn.jpg"
    },
    {
       "title":"Cannon Man",
-      "background":"./images/cannonman/bg.jpg"
+      "background":"./images/cannonman/bg.jpg",
+      "thumbnail":"../images/cannonman/tn.jpg"
    },
    {
       "title":"EQueue",
-      "background":"./images/equeue/bg.jpg"
+      "background":"./images/equeue/bg.jpg",
+      "thumbnail":"../images/equeue/tn.jpg"
+   },
+   {
+      "title":"Light Eater",
+      "background":"./images/lighteater/bg.jpg",
+      "thumbnail":"../images/lighteater/tn.jpg"
    }
 ]

@@ -204,6 +204,14 @@ function workClick(getCount){
 //}
 
 document.addEventListener('DOMContentLoaded',function(){
+    $('#work-cover')[0].style.opacity = '1';
+    $('#navigation')[0].style.marginLeft = "91%";
+    setTimeout(function(){
+        $('#work-cover')[0].style.opacity = '0';
+    },500);
+    setTimeout(function(){
+        $('#work-cover')[0].style.zIndex = '-1';
+    },1300);
 
     loadWorks();
 
