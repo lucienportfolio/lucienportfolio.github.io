@@ -910,3 +910,8 @@ body{
     display: inline-block;
     margin-right: 30px;
 }
+
+#video-content iframe{
+    height: 70vh;
+    margin-left:10%;
+}

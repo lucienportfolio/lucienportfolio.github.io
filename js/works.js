@@ -28,6 +28,7 @@ var fetchData = $.getJSON("../json/data.json", function(data){
                     "tn": info["thumbnail"],
                     "concept": info["concept"],
                     "gallery": info["gallery"],
+                    "video": info["video"]
                 }
             )
         console.log('a');
@@ -68,12 +69,13 @@ function loadAll(iCount){
     for(var i = 0; i< worksContent[iCount].gallery.length;i++){
         var newI = $("<div class='gallery-item' onclick='galleryIn("+i+","+iCount+")'></div>");
         newI[0].style.background = "url("+worksContent[iCount].gallery[i]+")";
-        newI[0].style.backgroundSize = "100%";
+        newI[0].style.backgroundSize = "auto 100%";
+        newI[0].style.backgroundRepeat="no-repeat";
         newI[0].style.backgroundPosition ="center";
         $('#gallery-content').append(newI);
         console.log($('#gallery-content'));
     }
-
+    $('#youtube')[0].src=worksContent[iCount].video;
     $('#proj-time').html(worksContent[iCount].time);
     $('#proj-res').html(worksContent[iCount].res);
     $('#proj-type').html(worksContent[iCount].type);
