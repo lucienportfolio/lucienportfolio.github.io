@@ -28,7 +28,8 @@ var fetchData = $.getJSON("../json/data.json", function(data){
                     "tn": info["thumbnail"],
                     "concept": info["concept"],
                     "gallery": info["gallery"],
-                    "video": info["video"]
+                    "video": info["video"],
+                    "github": info["github"]
                 }
             )
         console.log('a');
@@ -73,23 +74,56 @@ function loadAll(iCount){
         newI[0].style.backgroundRepeat="no-repeat";
         newI[0].style.backgroundPosition ="center";
         $('#gallery-content').append(newI);
-        console.log($('#gallery-content'));
+        $('.gallery-item').hover(function(){
+            $(this)[0].style.filter = "brightness(1.5)";
+        },function(){
+            $(this)[0].style.filter = "brightness(1)";
+        })
     }
+
     $('#youtube')[0].src=worksContent[iCount].video;
     $('#proj-time').html(worksContent[iCount].time);
     $('#proj-res').html(worksContent[iCount].res);
     $('#proj-type').html(worksContent[iCount].type);
     $('#proj-skills').html(worksContent[iCount].skills);
     $('#proj-final').html(worksContent[iCount].final);
+    if(worksContent[iCount].github!=undefined){
+        $('#proj-github')[0].href=worksContent[iCount].github;
+    }else{
+        $('#proj-code')[0].style.visibility="hidden";
+    }
 }
 
+
 function galleryIn(itemCount, iCount){
+    var left = 0;
+    var right = 0;
     $('#gallery-big')[0].style.zIndex = '1';
     $('#gallery-big')[0].style.opacity = '1';
     $('#works-navigation')[0].style.filter="blur(10px)";
     $('#works-header-bg')[0].style.filter="blur(10px)";
     $('#works-big-container')[0].style.filter="blur(10px)";
     $('#gallery-big-image')[0].src = worksContent[iCount].gallery[itemCount];
+    if(itemCount>0) left = itemCount-1;
+    else left = worksContent[iCount].gallery.length-1;
+    if(itemCount<worksContent[iCount].gallery.length-1) right = itemCount+1;
+    else right = 0;
+    $('#g-left').click(function(){
+        itemCount = left;
+        $('#gallery-big-image')[0].src = worksContent[iCount].gallery[itemCount];
+        if(itemCount>0) left = itemCount-1;
+        else left = worksContent[iCount].gallery.length-1;
+        if(itemCount<worksContent[iCount].gallery.length-1) right = itemCount+1;
+        else right = 0;
+    });
+    $('#g-right').click(function(){
+        itemCount = right;
+        $('#gallery-big-image')[0].src = worksContent[iCount].gallery[itemCount];
+        if(itemCount>0) left = itemCount-1;
+        else left = worksContent[iCount].gallery.length-1;
+        if(itemCount<worksContent[iCount].gallery.length-1) right = itemCount+1;
+        else right = 0;
+    });
 }
 
 $('#nav-1').click(function(){

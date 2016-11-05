@@ -4,7 +4,7 @@
    },
    {
       "title":"Taskloud",
-      "time":"2016",
+      "time":"2016 Spring",
       "responsibility": "Independent project",
       "type": "Bachelor Degree Thesis",
       "skills": "Adobe Creative Cloud, Objective-C, MySQL, Node.js",
@@ -29,7 +29,18 @@
    {
       "title":"Green Funeral",
       "background":"./images/greenfuneral/bg.jpg",
-      "thumbnail":"../images/greenfuneral/tn.jpg"
+      "thumbnail":"../images/greenfuneral/tn.jpg",
+      "time":"2016 Fall",
+      "responsibility": "Independent project",
+      "type": "Physical Computing Midterm Project",
+      "skills": "Arduino, Crafting",
+      "final": "A phydical object",
+      "concept":["This is a physical object project based on Arduino. The main idea is that since the environmental damage is getting worse, there are less and less green plants existing because of global warming and damage to forests. And may be some day in the near future, no green plants can survive. But it seems that only a few people worry about these issues. For some people, they don't care about the environment. They don't need green plants because they can just sit at home or at work, looking at this vivid moving \"plant\". So I made this project as sarcasm to arouse people's attention to the nature and to let them know what will happen if we keep doing damage to the nature."
+         ,"In this project, I used 3 hall effect sensors, 10 LEDs in different colors, a continuous rotating servo and a ultrasonic distance sensor. There are in total 4 modes of this object. If 3 magnets are all face to the body, its the sleep mode which means the it's turned off. Pease mode is that lights glow gently and give out a peaceful feeling. Party mode is that the lights glow and blink fast, the servo rotates really fast which makes the body ratates. And Pet mode is that lights blink in random brightness. And if there's something blocking the ultrasonic sensor, the body will \"turn away\" like a pet to interact with its owner"
+         ],
+      "gallery":["../images/greenfuneral/1.jpg","../images/greenfuneral/2.jpg","../images/greenfuneral/3.jpg","../images/greenfuneral/4.jpg","../images/greenfuneral/5.jpg","../images/greenfuneral/6.jpg","../images/greenfuneral/7.jpg"],
+      "video":"https://www.youtube.com/embed/fGDKFc9uSjQ?rel=0&amp;showinfo=0",
+      "github": "https://github.com/LucienHuang/Green-Funeral/blob/master/midTerm.ino"
    },
    {
       "title":"Inside Out",
