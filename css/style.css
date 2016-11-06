@@ -886,9 +886,10 @@ body{
 }
 
 #gallery-big-image{
-    margin-top:10vh;
-    width:70%;
+    margin-top:4vh;
+    width:80%;
     height:auto;
+    transition: all 0.2s linear;
 }
 
 #detail-content{
@@ -911,7 +912,37 @@ body{
     margin-right: 30px;
 }
 
+#proj-github{
+    color:rgba(255,100,100,1);
+}
+
 #video-content iframe{
     height: 70vh;
     margin-left:10%;
+}
+
+.direction{
+    display: inline-block;
+    cursor: pointer;
+    width:50%;
+    height:50px;
+    background:white;
+    transition: all 0.2s linear;
+}
+
+.direction:hover{
+    color:white;
+    background:rgba(255,35,35,1);
+}
+
+#direction{
+    margin-left:10%;
+    width:80%;
+    display: flex;
+}
+
+.direction p{
+    margin:0;
+    line-height: 50px;
+    font-size: 28px;
 }
