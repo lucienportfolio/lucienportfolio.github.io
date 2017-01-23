@@ -11,9 +11,9 @@ var count = 0;
 var donea = false;
 
 function setup() {
-  var myCanvas = createCanvas(1000,600);
   background(30,30,30);
-  myCanvas.parent('title');
+    var myCanvas = createCanvas(windowWidth,windowHeight);
+    myCanvas.parent('title');
   for(var i = 0; i<ballNum; i++){
     pos.push([i*i*sin(0.1*i)/80+width/2,i*i*cos(0.1*i)/80+height/2]);
     var graX = (pos[i][0]-width/2)/100;
@@ -21,13 +21,15 @@ function setup() {
     vel.push([0,0]);
     acc.push([graX,graY]);
     sizeBall.push(5);
-    alphaBall.push(255);
+    alphaBall.push(355);
     //spdX.push(1-2*Math.random());
     //spdY.push(1-2*Math.random());
   }
 }
 
 function draw() {
+  var myCanvas = createCanvas(windowWidth,windowHeight);
+  myCanvas.parent('title');
   if(count<220) count++;
   noStroke();
   fill(30,30,30,150);
@@ -35,8 +37,8 @@ function draw() {
   for(var i = 0; i<ballNum; i++){
     var distance = dist(pos[i][0], pos[i][1], width/2, height/2);
     sizeBall[i] = map(distance,0,width/2,0,50);
-    alphaBall[i] = map(distance,0,width/2,0,180);
-    fill(255,255,255,alphaBall[i]-alphaGo);
+    alphaBall[i] = map(distance,0,width/2,0,255);
+    fill(255,alphaBall[i]-alphaGo-Math.random()*100);
     if(count>i){
       ellipse(pos[i][0],pos[i][1],sizeBall[i],sizeBall[i]);
     }

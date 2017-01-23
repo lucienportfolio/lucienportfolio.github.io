@@ -190,8 +190,8 @@ body{
 
 #big-title{
     position:absolute;
-    top:400px;
-    left:45%;
+    bottom:10%;
+    right:10%;
     text-align: center;
     display: inline-block;
     float:right;
@@ -866,9 +866,9 @@ body{
     margin-left:1%;
     margin-right:1%;
     margin-bottom: 12px;
-    height:250px;
+    height:40vh;
     display: inline-block;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer ;
 }
 

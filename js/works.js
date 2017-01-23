@@ -75,13 +75,19 @@ function loadAll(iCount){
         newI[0].style.backgroundPosition ="center";
         $('#gallery-content').append(newI);
         $('.gallery-item').hover(function(){
-            $(this)[0].style.filter = "brightness(1.5)";
+            $(this)[0].style.filter = "brightness(1.2)";
         },function(){
             $(this)[0].style.filter = "brightness(1)";
         })
     }
 
-    $('#youtube')[0].src=worksContent[iCount].video;
+    if(worksContent[iCount].video!=undefined){
+        $('#youtube')[0].src=worksContent[iCount].video;
+    }else{
+        $('#video')[0].style.visibility = "hidden";
+        $('#video')[0].style.height = "0";
+    }
+
     $('#proj-time').html(worksContent[iCount].time);
     $('#proj-res').html(worksContent[iCount].res);
     $('#proj-type').html(worksContent[iCount].type);

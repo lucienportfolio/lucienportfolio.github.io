@@ -3,14 +3,24 @@
 
    },
    {
+      "title":"Infinite Dreams",
+      "background":"./images/infinitedreams/bg.jpg",
+      "thumbnail":"../images/infinitedreams/tn.jpg"
+   },
+   {
+      "title":"Lumière",
+      "background":"./images/lumiere/bg.jpg",
+      "thumbnail":"../images/lumiere/tn.jpg"
+   },
+   {
       "title":"Taskloud",
+      "background":"../images/taskloud/bg.jpg",
+      "thumbnail":"../images/taskloud/tn.jpg",
       "time":"2016 Spring",
-      "responsibility": "Independent project",
+      "responsibility": "Individual project",
       "type": "Bachelor Degree Thesis",
       "skills": "Adobe Creative Cloud, Objective-C, MySQL, Node.js",
       "final": "A schedule planner APP based on iOS, related server-side program and project documentation",
-      "background":"../images/taskloud/bg.jpg",
-      "thumbnail":"../images/taskloud/tn.jpg",
       "concept":["Since working and Studying has been playing the most important role in our lives, we have to deal with a great deal of various affairs everyday. Scheduling time more appropriately is very essential to us. Therefore, I developed this easy-to-use APP to manage our time and schdules which can meet our daily needs. But the existing APPs are usually too complicated for users to use and they don't really maximum the advantage of smart phone.",
          "In this project, my intention is to develop an application which has a featur that allows users to manage others' schedule like adding new appointments. And I also used GPS in the application to let users get notification according to their position"],
       "gallery":["../images/taskloud/1.jpg","../images/taskloud/2.jpg","../images/taskloud/3.jpg","../images/taskloud/4.jpg"],
@@ -19,19 +29,39 @@
    {
       "title":"Light Up",
       "background":"./images/lightup/bg.jpg",
-      "thumbnail":"../images/lightup/tn.jpg"
+      "thumbnail":"../images/lightup/tn.jpg",
+      "time":"2015 Summer",
+      "responsibility": "Team leader / UI&UX designer / Programmer",
+      "type": "Shanghai College Student Innovation Program - Excellent Project Award Winner",
+      "skills": "Adobe Creative Cloud, Objective-C, MySQL, PHP, Baidu Maps API",
+      "final": "A social travel APP based on iOS, related server-side program and project documentation.",
+      "concept":["Sometimes we think we know a lot about the cities we live in. But actually, there are still some places that we've never been to in the cities. They can be really surprising, different and fascinating. During the time I live and study in Shanghai, I went to a lot of places and every time I went to a new place, I felt that I knew the city better. I didn't realize that Shanghai has so many different cultures. Some places are very flourishing, some are old, some are artistic... But they are all special and they make the city Shanghai. So I want to encourage people to go out, to know the city's culture and to seek the beauty of the city."
+      ,"So the way I wanted to push people was to make an App. Since I noticed that people are more and more relying on mobile applications and they like to share and \"compete\" with their friends. Also, a mobile application can better track where the user has or has not been to. So we built a server and an application to realize the idea."
+      ,"The first thing we did was summing up the requirements of users and functions the app should have. using this app, users can explore the city by lighting up the map, which is just like how exploration is like in computer games. And users can know where they have been to and how much percentage of the city they have explored. Also, users can share their experience, feelings and comments on certain places with other people so that they can read the comments and decide where they want to go. Users need to light up the position by taking a picture, and the system knows where they are according to their GPS information."
+      ,"We had a really hard time developing the algorithm of dividing the city map. Because there are some places that are more touristy, and some more boring and unworthy of traveling to. The first idea was to dividing the map in irregular shapes. But it was impossible to store the shapes and to determine which area the users were in. Then, we decided to use circles because we could just store the position of the center and the radius to determine an area, which was a really good solution. And the reason why we just made the map of Shanghai was that it took a lot of time for us to draw on the map and to record the information of each area manually."
+      ,"The project had some flaws. We could spend more time thinking about how to divide the map automatically because the dividing was too subject."],
+      "gallery":["../images/lightup/1.jpg","../images/lightup/2.jpg","../images/lightup/3.jpg"],
+      "video":"https://www.youtube.com/embed/YRxUPcOOzkg?rel=0&amp;showinfo=0"
    },
    {
       "title":"Compile Youth",
       "background":"./images/compileyouth/bg.jpg",
-      "thumbnail":"../images/compileyouth/tn.jpg"
+      "thumbnail":"../images/compileyouth/tn.jpg",
+      "time":"2016 Summer",
+      "responsibility": "Designer",
+      "type": "School yearbook",
+      "skills": "Adobe Creative Cloud",
+      "final": "Printed book",
+      "concept":["This is the yearbook for students graduated from School of Software Engineering, Tongji University in 2016 and faculties. Generally, the design was pretty formal."
+      ,""],
+      "gallery":["../images/compileyouth/1.jpg","../images/compileyouth/2.jpg","../images/compileyouth/3.jpg","../images/compileyouth/4.jpg"]
    },
    {
       "title":"Green Funeral",
       "background":"./images/greenfuneral/bg.jpg",
       "thumbnail":"../images/greenfuneral/tn.jpg",
       "time":"2016 Fall",
-      "responsibility": "Independent project",
+      "responsibility": "Individual project",
       "type": "Physical Computing Midterm Project",
       "skills": "Arduino, Crafting",
       "final": "A phydical object",
