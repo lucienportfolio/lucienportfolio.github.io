@@ -14,6 +14,7 @@ function getUrlParam(name)
 var workCount = getUrlParam('work');
 var worksContent = [];
 
+
 var fetchData = $.getJSON("../json/data.json", function(data){
     $.each(data,function(infoIndex,info){
             worksContent.push(
@@ -53,6 +54,7 @@ function show(){
         loadAll(1)
         moreWorks();
     }else{
+        console.log(worksContent);
         $('#works-title')[0].innerHTML = worksContent[workCount].title;
         $('#works-header-bg')[0].style.background = 'url('+worksContent[workCount].bg+')';
         $('#works-header-bg')[0].style.backgroundSize = "100%";

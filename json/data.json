@@ -5,17 +5,20 @@
    {
       "title":"Infinite Dreams",
       "background":"./images/infinitedreams/bg.jpg",
-      "thumbnail":"../images/infinitedreams/tn.jpg"
+      "thumbnail":"../images/infinitedreams/tn.gif",
+      "design":"Installation+Creative coding"
    },
    {
       "title":"Lumière",
       "background":"./images/lumiere/bg.jpg",
-      "thumbnail":"../images/lumiere/tn.jpg"
+      "thumbnail":"../images/lumiere/tn.jpg",
+      "design":"Physical computing"
    },
    {
       "title":"Taskloud",
       "background":"../images/taskloud/bg.jpg",
       "thumbnail":"../images/taskloud/tn.jpg",
+      "design":"iOS App",
       "time":"2016 Spring",
       "responsibility": "Individual project",
       "type": "Bachelor Degree Thesis",
@@ -30,6 +33,7 @@
       "title":"Light Up",
       "background":"./images/lightup/bg.jpg",
       "thumbnail":"../images/lightup/tn.jpg",
+      "design":"iOS App",
       "time":"2015 Summer",
       "responsibility": "Team leader / UI&UX designer / Programmer",
       "type": "Shanghai College Student Innovation Program - Excellent Project Award Winner",
@@ -47,6 +51,7 @@
       "title":"Compile Youth",
       "background":"./images/compileyouth/bg.jpg",
       "thumbnail":"../images/compileyouth/tn.jpg",
+      "design":"Physical book",
       "time":"2016 Summer",
       "responsibility": "Designer",
       "type": "School yearbook",
@@ -60,6 +65,7 @@
       "title":"Green Funeral",
       "background":"./images/greenfuneral/bg.jpg",
       "thumbnail":"../images/greenfuneral/tn.jpg",
+      "design":"Physical computing",
       "time":"2016 Fall",
       "responsibility": "Individual project",
       "type": "Physical Computing Midterm Project",
@@ -74,21 +80,25 @@
    },
    {
       "title":"Inside Out",
+      "design":"Installation",
       "background":"./images/insideout/bg.jpg",
       "thumbnail":"../images/insideout/tn.jpg"
    },
    {
       "title":"Cannon Man",
+      "design":"Game",
       "background":"./images/cannonman/bg.jpg",
       "thumbnail":"../images/cannonman/tn.jpg"
    },
    {
       "title":"EQueue",
+      "design":"iOS App",
       "background":"./images/equeue/bg.jpg",
       "thumbnail":"../images/equeue/tn.jpg"
    },
    {
       "title":"Light Eater",
+      "design":"Physical computing",
       "background":"./images/lighteater/bg.jpg",
       "thumbnail":"../images/lighteater/tn.jpg"
    }

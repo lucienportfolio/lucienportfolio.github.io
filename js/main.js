@@ -55,138 +55,84 @@ $(function() {
 
 var mouseOn = [0,0,0,0,0,0,0];
 
+var worksContent = [];
+var fetchData = $.getJSON("../json/data.json", function(data){
+    $.each(data,function(infoIndex,info){
+        worksContent.push(
+            {
+                "title": info["title"],
+                "time": info["time"],
+                "res": info["responsibility"],
+                "type": info["type"],
+                "design": info["design"],
+                "skills": info["skills"],
+                "final": info["final"],
+                "bg": info["background"],
+                "tn": info["thumbnail"],
+                "concept": info["concept"],
+                "gallery": info["gallery"],
+                "video": info["video"],
+                "github": info["github"]
+            }
+        )
+        console.log('a');
+    })
+}).done(function() {
+    console.log( "second success" );
+})
+    .fail(function() {
+        console.log( "error" );
+    })
+    .always(function() {
+        loadWorks();
+    });
+
+
+function mouseOverItem(count){
+    $('#des'+count)[0].style.marginTop='0';
+}
+
+function mouseOutItem(count){
+    $('#des'+count)[0].style.marginTop='100%';
+}
+
 function loadWorks(){
-    $('#work-1')[0].style.background = "url(./images/works-1.jpg)"
-    $('#work-1')[0].style.backgroundSize = "100%";
-    $('#work-1')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-1')[0].style.backgroundPosition = "center";
-    console.log( $('#work-1-title'));
-    $('#work-1').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-1-title')[0].style.opacity = "1";
-        mouseOn[0] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-1-title')[0].style.opacity = "0";
-        mouseOn[0] = 0;
-    } );
+    var workCol1 = $('#work-col-1')[0];
+    var workCol1 = $('#work-col-2')[0];
+    var workCol1 = $('#work-col-3')[0];
 
-    $('#work-2')[0].style.background = "url(./images/works-2.jpg)";
-    $('#work-2')[0].style.backgroundSize = "100%";
-    $('#work-2')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-2')[0].style.backgroundPosition = "center";
-    console.log( $('#work-1-title'));
-    $('#work-2').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-2-title')[0].style.opacity = "1";
-        mouseOn[1] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-2-title')[0].style.opacity = "0";
-        mouseOn[1] =0;
-    } );
+    for(var i = 1; i<worksContent.length; i++){
+        var col = (i-1)%3;
+        var newItem = $("<div class='works-item' onclick='workClick("+i+")' onmouseover='mouseOverItem("+i+")' onmouseout='mouseOutItem("+i+")'></div>");
+        var newItemDescription = $("<div class='works-description' id='des"+i+"'></div>");
 
-    $('#work-3')[0].style.background = "url(./images/works-3.jpg)";
-    $('#work-3')[0].style.backgroundSize = "100%";
-    $('#work-3')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-3')[0].style.backgroundPosition = "center";
-    console.log( $('#work-3-title'));
-    $('#work-3').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-3-title')[0].style.opacity = "1";
-        mouseOn[2] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-3-title')[0].style.opacity = "0";
-        mouseOn[2] = 0;
-    } );
+        var newItemTitle = $("<p class='des-title'>"+worksContent[i].title+"</p>");
+        var newItemType = $("<p class='des-type'>"+worksContent[i].design+"</p>");
+        if(worksContent[i].time!=undefined){
+            var newItemTime = $("<p class='des-time'>"+worksContent[i].time+"</p>");
+        }
 
-    $('#work-4')[0].style.background = "url(./images/works-4.jpg)";
-    $('#work-4')[0].style.backgroundSize = "100%";
-    $('#work-4')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-4')[0].style.backgroundPosition = "center";
-    console.log( $('#work-3-title'));
-    $('#work-4').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-4-title')[0].style.opacity = "1";
-        mouseOn[3] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-4-title')[0].style.opacity = "0";
-        mouseOn[3] = 0;
-    } );
+        newItem[0].style.background= 'url('+worksContent[i].tn+')';
+        newItem[0].style.backgroundSize='100%';
+        newItem[0].style.backgroundRepeat = "no-repeat";
+        newItem[0].style.backgroundPosition='center';
 
-    $('#work-5')[0].style.background = "url(./images/works-5.jpg)";
-    $('#work-5')[0].style.backgroundSize = "100%";
-    $('#work-5')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-5')[0].style.backgroundPosition = "center";
-    console.log( $('#work-5-title'));
-    $('#work-5').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-5-title')[0].style.opacity = "1";
-        mouseOn[4] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-5-title')[0].style.opacity = "0";
-        mouseOn[4] = 0;
-    } );
+        newItemDescription.append(newItemTitle);
+        newItemDescription.append(newItemType);
+        newItemDescription.append(newItemTime);
+        newItem.append(newItemDescription);
 
-    $('#work-6')[0].style.background = "url(./images/works-6.jpg)";
-    $('#work-6')[0].style.backgroundSize = "100%";
-    $('#work-6')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-6')[0].style.backgroundPosition = "center";
-    console.log( $('#work-6-title'));
-    $('#work-6').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-6-title')[0].style.opacity = "1";
-        mouseOn[5] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-6-title')[0].style.opacity = "0";
-        mouseOn[5] = 0;
-    } );
-
-    $('#work-7')[0].style.background = "url(./images/works-7.jpg)";
-    $('#work-7')[0].style.backgroundSize = "100%";
-    $('#work-7')[0].style.backgroundRepeat = "no-repeat";
-    $('#work-7')[0].style.backgroundPosition = "center";
-    console.log( $('#work-7-title'));
-    $('#work-7').hover(function(){
-        $(this)[0].style.backgroundSize="200%";
-        $(this)[0].style.filter = "brightness(0.3) grayscale(0.5)"
-        $('#work-7-title')[0].style.opacity = "1";
-        mouseOn[6] = 1;
-    },function(){
-        $(this)[0].style.backgroundSize="100%";
-        $(this)[0].style.filter = "brightness(1) grayscale(0)"
-        $('#work-7-title')[0].style.opacity = "0";
-        mouseOn[6] = 0;
-    } );
+        $("#work-col-"+col).append(newItem);
+    }
 }
 
 function workClick(getCount){
-        $('#work-title')[0].style.marginLeft = "100%";
         $('#navigation')[0].style.marginLeft = "100%";
-        $('#work-row-1')[0].style.marginLeft = "-100%";
-        $('#work-row-2')[0].style.marginLeft = "100%";
-        $('#work-row-3')[0].style.marginLeft = "-100%";
+        $('#work-col-0')[0].style.marginTop = "-30%";
+        $('#work-col-1')[0].style.marginTop = "30%";
+        $('#work-col-2')[0].style.marginTop = "-30%";
         $('#body-cover')[0].style.zIndex = "1";
         $('#body-cover')[0].style.opacity = "1";
-        for(var i= 1 ; i<8; i++) {
-            $('#work-' + i + '-title')[0].style.marginLeft = "-200%";
-        }
         setTimeout(function(){
             window.location.href='./works.html?work='+getCount;
         },1000);
@@ -213,7 +159,7 @@ document.addEventListener('DOMContentLoaded',function(){
         $('#work-cover')[0].style.zIndex = '-1';
     },1300);
 
-    loadWorks();
+    // loadWorks();
 
     for(var i = 0; i<20; i++){
         var big = document.getElementById('background-animation');
