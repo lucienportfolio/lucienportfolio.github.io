@@ -9,13 +9,13 @@ var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({triggerElement: "#title"})
     .setClassToggle("#nav-1","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#work"})
+new ScrollMagic.Scene({triggerElement: "#about"})
     .setClassToggle("#nav-2","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#blog"})
+new ScrollMagic.Scene({triggerElement: "#work", offset: 200})
     .setClassToggle("#nav-3","active")
     .addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#about"})
+new ScrollMagic.Scene({triggerElement: "#blog"})
     .setClassToggle("#nav-4","active")
     .addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#contact"})
@@ -26,7 +26,7 @@ new ScrollMagic.Scene({triggerElement: "#about", duration: 600})
     .setClassToggle("#line-about", "line-2")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#work", duration: 600})
+new ScrollMagic.Scene({triggerElement: "#work", duration: 600, offset: 200})
     .setClassToggle("#line-work", "line-2")
     .addTo(controller);
 

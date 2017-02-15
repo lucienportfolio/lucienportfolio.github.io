@@ -200,7 +200,38 @@ body{
 }
 
 #contact{
-    height:1000px;
+}
+
+#cont-info p{
+    color:white;
+    font-size:22px;
+    line-height:26px;
+}
+
+#social img{
+    width:2%;
+    height:2%;
+    margin-right:5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#social img:hover{
+    filter: brightness(0.7);
+}
+
+#about-container{
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+#contact-container{
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 20px;
 }
 
 .parts{
@@ -241,8 +272,8 @@ body{
 }
 
 #big-title a:hover{
-    color:rgba(255,255,255,1);
-    border:solid 3px rgba(255,255,255,1);
+    /*color:rgba(255,35,35,1);*/
+    border:solid 3px black;
 }
 
 #logo-animation{
@@ -492,6 +523,15 @@ body{
     margin-top:0;
     margin-bottom:0;
     height:200px;
+}
+
+#footer-2{
+    z-index: -2;
+    background: #303030;
+    width:100%;
+    margin-top:0;
+    margin-bottom:0;
+    height:600px;
 }
 
 #footer-works{
