@@ -1,6 +1,21 @@
 window.location.href;
 var everLoaded = false;
 
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
 function getUrlParam(name)
 {
     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
@@ -22,6 +37,7 @@ var fetchData = $.getJSON("../json/data.json", function(data){
                     "title": info["title"],
                     "time": info["time"],
                     "res": info["responsibility"],
+                    "design": info["design"],
                     "type": info["type"],
                     "skills": info["skills"],
                     "final": info["final"],
@@ -51,14 +67,21 @@ function show(){
         $('#works-header-bg')[0].style.background = 'url('+worksContent[1].bg+')';
         $('#works-header-bg')[0].style.backgroundSize = "100%";
         $('#works-header-bg')[0].style.backgroundPosition = "center";
+        $('#works-footer-bg')[0].style.background = 'url('+worksContent[1].bg+')';
+        $('#works-footer-bg')[0].style.backgroundSize = "100%";
+        $('#works-footer-bg')[0].style.backgroundPosition = "center";
         loadAll(1)
         moreWorks();
     }else{
+        console.log()
         console.log(worksContent);
         $('#works-title')[0].innerHTML = worksContent[workCount].title;
         $('#works-header-bg')[0].style.background = 'url('+worksContent[workCount].bg+')';
         $('#works-header-bg')[0].style.backgroundSize = "100%";
         $('#works-header-bg')[0].style.backgroundPosition = "center";
+        $('#works-footer-bg')[0].style.background = 'url('+worksContent[workCount].bg+')';
+        $('#works-footer-bg')[0].style.backgroundSize = "100%";
+        $('#works-footer-bg')[0].style.backgroundPosition = "center";
         loadAll(workCount)
     }
 }
@@ -144,6 +167,8 @@ $('#nav-1').click(function(){
         $('#works-big-container')[0].style.marginTop="-200px";
         $('#works-big-container')[0].style.opacity="0";
         $('#works-navigation')[0].style.left="110%";
+        $('#works-footer-bg')[0].style.opacity="0";
+        $('#works-footer-bg')[0].style.bottom="-30vh";
     },200);
     setTimeout(function(){
         window.location.href='./index.html';
@@ -161,6 +186,8 @@ $('#nav-3').click(function(){
         $('#works-header-bg')[0].style.opacity="0";
         $('#works-big-container')[0].style.marginLeft="-100%";
         $('#works-big-container')[0].style.opacity="0";
+        $('#works-footer-bg')[0].style.opacity="0";
+        $('#works-footer-bg')[0].style.bottom="-30vh";
     },200);
     setTimeout(function(){
         //if(workCount==0) workCount = worksContent.length-1;
@@ -181,6 +208,8 @@ $('#nav-4').click(function(){
         $('#works-header-bg')[0].style.opacity="0";
         $('#works-big-container')[0].style.marginLeft="-100%";
         $('#works-big-container')[0].style.opacity="0";
+        $('#works-footer-bg')[0].style.opacity="0";
+        $('#works-footer-bg')[0].style.bottom="-30vh";
     },200);
     setTimeout(function(){
         if(workCount==0) workCount = 2;
@@ -241,13 +270,23 @@ function loadWorks(){
     for(var i = 1; i<worksContent.length;i++){
         var col = (i-1)%3;
         var newItem = $("<div class='menu-item' onclick='workClick("+i+")' onmouseover='mouseOverItem("+i+")' onmouseout='mouseOutItem("+i+")'></div>");
-        var newItemdescription = $("<div class='menu-description' id='"+i+"'></div>");
+        var newItemDescription = $("<div class='menu-description' id='"+i+"'></div>");
+
+
+        var newItemTitle = $("<p class='menu-title'>"+worksContent[i].title+"</p>");
+        var newItemType = $("<p class='menu-type'>"+worksContent[i].design+"</p>");
+        if(worksContent[i].time!=undefined){
+            var newItemTime = $("<p class='menu-time'>"+worksContent[i].time+"</p>");}
+
         newItem[0].style.background= 'url('+worksContent[i].tn+')';
         newItem[0].style.backgroundSize='100%';
         newItem[0].style.backgroundPosition='center';
-        newItemdescription.html(worksContent[i].title);
-        newItem.append(newItemdescription);
-        console.log($('#menu-col-'+col));
+
+            newItemDescription.append(newItemTitle);
+            newItemDescription.append(newItemType);
+            newItemDescription.append(newItemTime);
+
+        newItem.append(newItemDescription);
         $('#menu-col-'+col).append(newItem);
     }
 }
@@ -275,9 +314,11 @@ document.addEventListener('DOMContentLoaded',function(){
         $('#works-big-container')[0].style.marginTop="200px";
         $('#works-big-container')[0].style.opacity="1";
         $('#works-navigation')[0].style.left="84%";
+        $('#works-footer-bg')[0].style.bottom="0";
     },300);
     setTimeout(function(){
         $('#work-cover')[0].style.zIndex = '-1';
+        $('#works-footer-bg')[0].style.opacity="1";
     },800);
 });
 /**

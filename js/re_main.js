@@ -24,55 +24,59 @@ new ScrollMagic.Scene({triggerElement:"#activities", offset:-50})
     .setClassToggle("#resume-back", "resume-back-activities")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#ps", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#ps", offset:-300})
     .setClassToggle("#ps", "ps-1")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#htcs", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#htcs", offset:-300})
     .setClassToggle("#htcs", "htcs")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#cc", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#cc", offset:-300})
     .setClassToggle("#cc", "cc")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#ard", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#ard", offset:-300})
     .setClassToggle("#ard", "ard")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#jsjq", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#jsjq", offset:-300})
     .setClassToggle("#jsjq", "jsjq")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#proc", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#proc", offset:-300})
     .setClassToggle("#proc", "proc")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#java", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#of", offset:-300})
+    .setClassToggle("#of", "of")
+    .addTo(controller);
+
+new ScrollMagic.Scene({triggerElement: "#java", offset:-300})
     .setClassToggle("#java", "java")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#sql", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#sql", offset:-300})
     .setClassToggle("#sql", "sql")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#ai", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#ai", offset:-300})
     .setClassToggle("#ai", "ai")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#pr", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#pr", offset:-300})
     .setClassToggle("#pr", "pr")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#ae", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#ae", offset:-300})
     .setClassToggle("#ae", "ae")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#my", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#my", offset:-300})
     .setClassToggle("#my", "my")
     .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: "#unity", offset:-100})
+new ScrollMagic.Scene({triggerElement: "#unity", offset:-300})
     .setClassToggle("#unity", "unity")
     .addTo(controller);
 

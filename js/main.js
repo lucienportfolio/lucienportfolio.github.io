@@ -90,10 +90,12 @@ var fetchData = $.getJSON("../json/data.json", function(data){
 
 function mouseOverItem(count){
     $('#des'+count)[0].style.marginTop='0';
+    $('#itm'+count)[0].style.backgroundSize = '120%';
 }
 
 function mouseOutItem(count){
     $('#des'+count)[0].style.marginTop='100%';
+    $('#itm'+count)[0].style.backgroundSize = '100%';
 }
 
 function loadWorks(){
@@ -103,14 +105,12 @@ function loadWorks(){
 
     for(var i = 1; i<worksContent.length; i++){
         var col = (i-1)%3;
-        var newItem = $("<div class='works-item' onclick='workClick("+i+")' onmouseover='mouseOverItem("+i+")' onmouseout='mouseOutItem("+i+")'></div>");
+        var newItem = $("<div class='works-item' id='itm"+i+"' onclick='workClick("+i+")' onmouseover='mouseOverItem("+i+")' onmouseout='mouseOutItem("+i+")'></div>");
         var newItemDescription = $("<div class='works-description' id='des"+i+"'></div>");
 
         var newItemTitle = $("<p class='des-title'>"+worksContent[i].title+"</p>");
         var newItemType = $("<p class='des-type'>"+worksContent[i].design+"</p>");
-        if(worksContent[i].time!=undefined){
-            var newItemTime = $("<p class='des-time'>"+worksContent[i].time+"</p>");
-        }
+        var newItemTime = $("<p class='des-time'>"+worksContent[i].time+"</p>");
 
         newItem[0].style.background= 'url('+worksContent[i].tn+')';
         newItem[0].style.backgroundSize='100%';
