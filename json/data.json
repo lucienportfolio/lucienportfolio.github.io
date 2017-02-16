@@ -119,12 +119,29 @@
       "title":"EQueue",
       "design":"iOS App",
       "background":"./images/equeue/bg.jpg",
-      "thumbnail":"../images/equeue/tn.jpg"
+      "thumbnail":"../images/equeue/tn.jpg",
+      "time":"2014 Winter"
+   },
+   {
+      "title":"Emoji Bot",
+      "design":"Twitter Bot",
+      "background":"./images/emojibot/bg.jpg",
+      "thumbnail":"../images/emojibot/tn.jpg",
+      "time":"2017 Spring",
+      "responsibility": "Individual project",
+      "type": "Physical computing final project",
+      "skills": "Arduino, crafting",
+      "final": "A physical object using Arduino as a controller",
+      "concept":["This project is based on Arduino. The object is a cubic lamp that generates changing lights that gives different feelings. There is no button on the lamp and the user can rotate the lamp to interact with it. If the lamp is rotated clockwise, it can be turned on. And if it's rotated anti-clockwise, it can be turned off. When the lamp is on, rotating it clockwise again can change the light mode of the lamp. Also, when the lamp is landed on different planes, the lighting mode will be different. Since the cube has 6 planes, it has 6 modes of light, namely, Fire, Chroma, Wave, Heartbeat, Rainbow and Star. In every mode, there are also 4 different lighting color mode and speed mode.",
+         "I used a DotStar LED strip and an accelerometer to realize the interaction."],
+      "gallery":["../images/lumiere/1.jpg","../images/lumiere/2.jpg","../images/lumiere/3.jpg","../images/lumiere/4.jpg","../images/lumiere/5.jpg","../images/lumiere/6.gif"],
+      "github": "https://github.com/LucienHuang/PrivacyTwitterBot"
    },
    {
       "title":"Light Eater",
       "design":"Physical computing",
       "background":"./images/lighteater/bg.jpg",
-      "thumbnail":"../images/lighteater/tn.jpg"
+      "thumbnail":"../images/lighteater/tn.jpg",
+      "time":"2014 Winter"
    }
 ]

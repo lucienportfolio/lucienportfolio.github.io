@@ -25,7 +25,7 @@ function setup(){
     pos.push([random(0,width),random(0,height)]);
     vel.push([random(-1,1),random(-1,1)]);
     ballSize.push(0);
-    maxSize.push(random(50,350));
+    maxSize.push(random(100,400));
     inc.push(true);
     ballAlpha.push(0);
     color = random(3);
