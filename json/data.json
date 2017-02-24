@@ -21,7 +21,8 @@
          "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Dream Scenarios</span>",
          "<div class='small-videos'><iframe width='29%' height='100%' frameborder='0' src='https://www.youtube.com/embed/eIWlm4P3M8o?showinfo=0' allowfullscreen></iframe><iframe width='29%' height='100%' frameborder='0' src='https://www.youtube.com/embed/HD-OLJOYKVc?showinfo=0' allowfullscreen></iframe><iframe width='29%' height='100%' frameborder='0' src='https://www.youtube.com/embed/Ydlv6bO5QmE?showinfo=0' allowfullscreen></iframe></div>"],
       "gallery":["../images/infinitedreams/1.jpg","../images/infinitedreams/2.jpg","../images/infinitedreams/3.jpg","../images/infinitedreams/4.jpg","../images/infinitedreams/5.jpg","../images/infinitedreams/6.jpg","../images/infinitedreams/7.jpg","../images/infinitedreams/8.jpg","../images/infinitedreams/9.jpg","../images/infinitedreams/10.jpg","../images/infinitedreams/11.jpg","../images/infinitedreams/12.jpg","../images/infinitedreams/13.jpg","../images/infinitedreams/14.jpg"],
-      "video":"https://www.youtube.com/embed/yxWuxK3HoyM"
+      "video":"https://www.youtube.com/embed/yxWuxK3HoyM",
+      "github":"https://github.com/LucienHuang/Infinite-Dreams---Alice-Bounce"
    },
    {
       "title":"Lumière",
@@ -107,13 +108,23 @@
       "title":"Inside Out",
       "design":"Installation",
       "background":"./images/insideout/bg.jpg",
-      "thumbnail":"../images/insideout/tn.jpg"
+      "thumbnail":"../images/insideout/tn.jpg",
+      "time":"2016 Fall",
+      "responsibility": "Group project",
+      "type": "Instruction sets",
+      "skills": "Craft",
+      "final": "An installation which allows children to interact with",
+      "concept":["The topic for this project is instruction sets. So we were supposed to set up an interactive installation in a public place and observe how people interact with it. The outcome was quite successful and the result reached our expectations. At first, we wanted to use some AR techniques to let people look at the world differently. But then, we thought \"why don't we make some glasses or goggles so it would be different for users to look when they are wearing them?\" And that's when the final idea came up. But when we tested drawing something on a pair of glasses and looking through them, it was impossible to see both drawings on the glasses and the view outside because the drawings were too close to our eyes. So we changed our ideas to making cube helmets.",
+      "We set up a few cubes and hanged them on the trees. The cubes were designed so that people can put their heads inside and look at the outside. The cubes are designed differently so that it would be different experiences for children to look."],
+      "gallery":["../images/insideout/1.jpg","../images/insideout/2.jpg","../images/insideout/3.jpg","../images/insideout/4.jpg","../images/insideout/5.jpg"],
+      "video":"https://www.youtube.com/embed/fGDKFc9uSjQ?rel=0&amp;showinfo=0"
    },
    {
       "title":"Cannon Man",
       "design":"Game",
       "background":"./images/cannonman/bg.jpg",
-      "thumbnail":"../images/cannonman/tn.jpg"
+      "thumbnail":"../images/cannonman/tn.jpg",
+      "time":"2015 Spring"
    },
    {
       "title":"EQueue",
@@ -128,13 +139,13 @@
       "background":"./images/emojibot/bg.jpg",
       "thumbnail":"../images/emojibot/tn.jpg",
       "time":"2017 Spring",
-      "responsibility": "Individual project",
-      "type": "Physical computing final project",
-      "skills": "Arduino, crafting",
-      "final": "A physical object using Arduino as a controller",
-      "concept":["This project is based on Arduino. The object is a cubic lamp that generates changing lights that gives different feelings. There is no button on the lamp and the user can rotate the lamp to interact with it. If the lamp is rotated clockwise, it can be turned on. And if it's rotated anti-clockwise, it can be turned off. When the lamp is on, rotating it clockwise again can change the light mode of the lamp. Also, when the lamp is landed on different planes, the lighting mode will be different. Since the cube has 6 planes, it has 6 modes of light, namely, Fire, Chroma, Wave, Heartbeat, Rainbow and Star. In every mode, there are also 4 different lighting color mode and speed mode.",
-         "I used a DotStar LED strip and an accelerometer to realize the interaction."],
-      "gallery":["../images/lumiere/1.jpg","../images/lumiere/2.jpg","../images/lumiere/3.jpg","../images/lumiere/4.jpg","../images/lumiere/5.jpg","../images/lumiere/6.gif"],
+      "responsibility": "Developer",
+      "type": "School project",
+      "skills": "Node.js, JavaScript, Twitter API, affectiva API, Socket.io",
+      "final": "A Twitter Bot running with a website",
+      "concept":["We began this project by first formulating an issue that we felt inspired to address. We are looking at the many cases where technology is collecting seemingly random bits of information and exposing this practice as an invasion of our privacy whether we cognizant of it or not. We decided that we needed a method to display it in a public environment to embellish on growing awareness of this disregard for our privacy. Thus, the (invasive) “Privacy Twitter Bot” was conceived. We have created a platform that can run in the background on your web browser while recording your facial expressions as you use your computer. The information that is taken will then convert into an emoticon or emoji and post it to twitter every second. This stream of posts will allow anyone who follows the Privacy Twitter Bot to know how the user is feeling as they go about their work, education, or recreational use of their time at a computer. "
+      ,""],
+      "gallery":["../images/lumiere/1.jpg"],
       "github": "https://github.com/LucienHuang/PrivacyTwitterBot"
    },
    {
