@@ -49,6 +49,8 @@ function setup(){
 function draw(){
 
     background(30,30,30);
+    // fill(30,30,30,100);
+    // rect(0,0,width,height);
 
     for(var i = 0; i<row; i++){
       if(mouseX>0&&mouseX<width&&mouseY>0&&mouseY<height){

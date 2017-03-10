@@ -83,7 +83,7 @@
       "type": "School yearbook",
       "skills": "Adobe Creative Cloud",
       "final": "Printed book",
-      "concept":["This is the yearbook for students graduated from School of Software Engineering, Tongji University in 2016 and faculties. Generally, the design was pretty formal."
+      "concept":["This is the yearbook for students graduated from School of Software Engineering, Tongji University in 2016 and faculties."
       ,""],
       "gallery":["../images/compileyouth/1.jpg","../images/compileyouth/2.jpg","../images/compileyouth/3.jpg","../images/compileyouth/4.jpg"]
    },
@@ -132,6 +132,29 @@
       "background":"./images/equeue/bg.jpg",
       "thumbnail":"../images/equeue/tn.jpg",
       "time":"2014 Winter"
+   },{
+      "title":"postCard",
+      "background":"./images/postcard/bg.jpg",
+      "thumbnail":"../images/postcard/tn.jpg",
+      "design":"Mobile Game Design",
+      "time":"2017 Spring",
+      "responsibility": "Individual project",
+      "type": "School project",
+      "skills": "Adobe CC, MarvelApp",
+      "final": "A game experience design prototype",
+      "concept":["Are people already tired of sending postcards to their friends and family? If so, why do we still want to do that in this digital world? I’m designing this game, postCard, to simulate the experience of sending a postcard. The main point of the game is to improve people’s connection with each other, their old friends and family. Users can collect different postcards when they travel around the world.  When users receive postCards from their friends, they can see how the postCard traveled around the world and arrived in their hands. And they can go to offline stores to print out the postCards so that they can have a physical thing to keep as a souvenir.",
+         "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>User responsibilities</span>",
+         "Collector: users can collect rare postCards by scanning the postStickers around the world. They can also buy postcards in postStations.",
+         "Postman: When users want to send postCards, they have to work a little to as a payment of mailing the postCards.",
+         "Designer: Users can design their unique postCards by taking pictures or using digital files. They can also sell their designs in the postStations but they will have to pay a little money at first before they can make profits.",
+         "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Business model</span>",
+         "The game is free. But users need to pay when they want to buy postCards or print out postCards. They will also need to pay if they want their design to be sold in the postStations. But at the same time, they will make profits when their design is bought by others. On the other hand, if one wants to buy postCards, he will need to pay.",
+         "Users can also earn game points to pay for other stuff like stamps, postMarks and they can also use game points to pay for sending the postCards. Users can earn game points by help others send postCards, working like postmen.",
+         "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Prototype</span>",
+         "<a href='https://marvelapp.com/project/1746322/' style='color: rgb(255,100,100); font-size: 18px;' target='view_window'>MarvelApp</a>"
+      ],
+      "gallery":["../images/postcard/1.jpg","../images/postcard/2.jpg","../images/postcard/3.jpg","../images/postcard/4.jpg"],
+      "video":"https://www.youtube.com/embed/yxWuxK3HoyM"
    },
    {
       "title":"Emoji Bot",
@@ -143,9 +166,9 @@
       "type": "School project",
       "skills": "Node.js, JavaScript, Twitter API, affectiva API, Socket.io",
       "final": "A Twitter Bot running with a website",
-      "concept":["We began this project by first formulating an issue that we felt inspired to address. We are looking at the many cases where technology is collecting seemingly random bits of information and exposing this practice as an invasion of our privacy whether we cognizant of it or not. We decided that we needed a method to display it in a public environment to embellish on growing awareness of this disregard for our privacy. Thus, the (invasive) “Privacy Twitter Bot” was conceived. We have created a platform that can run in the background on your web browser while recording your facial expressions as you use your computer. The information that is taken will then convert into an emoticon or emoji and post it to twitter every second. This stream of posts will allow anyone who follows the Privacy Twitter Bot to know how the user is feeling as they go about their work, education, or recreational use of their time at a computer. "
-      ,""],
-      "gallery":["../images/lumiere/1.jpg"],
+      "concept":["We began this project by first formulating an issue that we felt inspired to address. We are looking at the many cases where technology is collecting seemingly random bits of information and exposing this practice as an invasion of our privacy whether we cognizant of it or not. We decided that we needed a method to display it in a public environment to embellish on growing awareness of this disregard for our privacy. Thus, the (invasive) “Privacy Twitter Bot” was conceived. We have created a platform that can run in the background on your web browser while recording your facial expressions as you use your computer. The information that is taken will then convert into an emoticon or emoji and post it to twitter every second. This stream of posts will allow anyone who follows the Privacy Twitter Bot to know how the user is feeling as they go about their work, education, or recreational use of their time at a computer. ",
+         "<a href='https://twitter.com/PrivateDataBot' style='color: rgb(255,100,100); font-size: 18px;' target='view_window'>View the twitterbot here</a>"],
+      "gallery":["../images/emojibot/1.jpg","../images/emojibot/2.jpg","../images/emojibot/3.jpg"],
       "github": "https://github.com/LucienHuang/PrivacyTwitterBot"
    },
    {
