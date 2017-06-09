@@ -3,6 +3,34 @@
 
    },
    {
+      "title":"Palimpsest",
+      "background":"./images/palimpsest/bg.jpg",
+      "thumbnail":"../images/palimpsest/tn.jpg",
+      "design":"iOS App design + prototyping",
+      "time":"2017 Spring",
+      "responsibility": "Individual project",
+      "type": "School project",
+      "skills": "Adobe Creative Cloud, Swift",
+      "final": "3 App design and prototypes",
+      "concept":["The final product of the project is three different mobile apps and related parts like website and backend server. For the first step of the project, I completed interface design for each app, interactive mockups and prototypes and functional prototypes. Each app has its own focus and they all serve as a platform for fandom communities to communicate, create artworks and stories and collaborate.",
+      "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Comet Storybook</span>",
+      "The idea of comet storybook came from the nature of fandom when I was watching my favorite TV show, Friends, again and again. And this thought always came to me. How would the story be like if Monica married Joey at last? What if Rachel didn’t leave Barry at the alter at the beginning? I have heard a lot about fanfiction but I hadn’t read them before I started reading fan fictions of Friends. sometimes I still have this feeling that I would change a little here and there or that I don’t like how things go like this. Thus, this idea of writing fan fictions of another fan fiction came to my mind and that’s how I wanted to create Comet Storybook.",
+      "With this app, users can rewrite stories, change how to push forward the plot and read (perhaps) hundreds of different endings to one story. This structure of making stories makes it easier for amateur writers because they don’t really need to have a complete outline of a story. They can just start a story or change a little bit how things would go and let other writers finish it. This collaboration also creates a mystery for every writer because no one would know how the story would end. In terms of story readers, they can also choose different paths and see how the story goes. So instead of reading just one story, the reader can actually read multiple different stories.",
+      "The app would also have a rating system for users to choose which is the best storyline. Users can also follow their favorite writers and check out the most popular stories.",
+      "<a style='font-size:16px; line-height:28px; color:rgb(255,100,100);' href='https://invis.io/8AC3EFHVJ' target='view_window'>Try Comet prototype on InVision</a>",
+      "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Ocean Role Playing Game</span>",
+      "Have you ever imagined if you become Harry Potter? Sheldon Cooper? Or Wolverine? What would you do when you’re facing the problems and what you would say to other characters? Ocean Role Playing Game is an app for fans to play their favorite characters, choose their paths and make up stories. This idea was based on some common fan activities like cosplay or theme gala. These kind of fan activities bring fans of the same interest together no matter where they come from and what gender they are. It’s a very important part of fan culture so I decided to bring that feature to the app where fans can gather around and collaborate.",
+      "Also, when reading the scripts of a movie or a TV show, the most important part is the conversation between the characters. But when reading traditional stories, the conversations can be interesting, and some of them have distinguishing tones. However, they are still from one writer. But with this app, every game player will only need to talk as one character, which would make it easier for every collaborator and make the conversation not interesting.",
+         "<a style='font-size:16px; line-height:28px; color:rgb(255,100,100);' href='https://invis.io/NCC3FTEKQ' target='view_window'>Try Ocean prototype on InVision</a>",
+         "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Echo Fan Art</span>",
+      "This app is a platform for artists, fan communities to share their fan art works, mostly pictures but also videos and music. The platform would mainly focus on fan art so artists can use that platform to gain reputation in the specific communities and to advertise their works. Users can also use this app to follow artists, their interests and their favorite characters. This platform would be an archive for fan art works and well organized specifically for fan arts.",
+      "I’m designing this App mainly because I think fan arts should be respected and shared. Fan arts sometimes have very dynamic views. I think fan art is also a way of telling a fan fiction because artists would draw something like Spock and Kirk making out and Harry Potter becoming a powerful little girl, we can see characters having different races, sexualities and genders. And it’s a visual way of expressing their thoughts.",
+         "<a style='font-size:16px; line-height:28px; color:rgb(255,100,100);' href='https://invis.io/MCC3GC78P' target='view_window'>Try Echo prototype on InVision</a>"],
+      "gallery":["../images/palimpsest/1.jpg","../images/palimpsest/2.jpg","../images/palimpsest/3.jpg","../images/palimpsest/4.png",""],
+      "video":"https://www.youtube.com/embed/zOtXhishv9U",
+      "github":"https://github.com/LucienHuang/Comet"
+   },
+   {
       "title":"Infinite Dreams",
       "background":"./images/infinitedreams/bg.jpg",
       "thumbnail":"../images/infinitedreams/tn.gif",
@@ -74,20 +102,6 @@
       "video":"https://www.youtube.com/embed/YRxUPcOOzkg?rel=0&amp;showinfo=0"
    },
    {
-      "title":"Compile Youth",
-      "background":"./images/compileyouth/bg.jpg",
-      "thumbnail":"../images/compileyouth/tn.jpg",
-      "design":"Physical book",
-      "time":"2016 Summer",
-      "responsibility": "Designer",
-      "type": "School yearbook",
-      "skills": "Adobe Creative Cloud",
-      "final": "Printed book",
-      "concept":["This is the yearbook for students graduated from School of Software Engineering, Tongji University in 2016 and faculties."
-      ,""],
-      "gallery":["../images/compileyouth/1.jpg","../images/compileyouth/2.jpg","../images/compileyouth/3.jpg","../images/compileyouth/4.jpg"]
-   },
-   {
       "title":"Green Funeral",
       "background":"./images/greenfuneral/bg.jpg",
       "thumbnail":"../images/greenfuneral/tn.jpg",
@@ -117,7 +131,22 @@
       "concept":["The topic for this project is instruction sets. So we were supposed to set up an interactive installation in a public place and observe how people interact with it. The outcome was quite successful and the result reached our expectations. At first, we wanted to use some AR techniques to let people look at the world differently. But then, we thought \"why don't we make some glasses or goggles so it would be different for users to look when they are wearing them?\" And that's when the final idea came up. But when we tested drawing something on a pair of glasses and looking through them, it was impossible to see both drawings on the glasses and the view outside because the drawings were too close to our eyes. So we changed our ideas to making cube helmets.",
       "We set up a few cubes and hanged them on the trees. The cubes were designed so that people can put their heads inside and look at the outside. The cubes are designed differently so that it would be different experiences for children to look."],
       "gallery":["../images/insideout/1.jpg","../images/insideout/2.jpg","../images/insideout/3.jpg","../images/insideout/4.jpg","../images/insideout/5.jpg"],
-      "video":"https://www.youtube.com/embed/fGDKFc9uSjQ?rel=0&amp;showinfo=0"
+      "video":"https://www.youtube.com/embed/gZZr-CjkUGI?rel=0&amp;showinfo=0"
+   },
+   {
+      "title":"Swerdz",
+      "design":"Online chat room",
+      "background":"./images/swerdz/bg.jpg",
+      "thumbnail":"../images/swerdz/tn.jpg",
+      "time":"2017 Spring",
+      "responsibility": "Developer",
+      "type": "School project",
+      "skills": "Node.js, JavaScript, Socket.io, Google natual language API",
+      "final": "A chat room that keep record of words that users have put in and convert the words into other words using the same syntax",
+      "concept":["This project aimed to discuss the disconnection when people communicate with each other using technologies. And we exaggerated the disconnection to see whether people enjoy communicating with others with words that make sense or they can enjoy it even when they can't really understand each other.",
+         "In this chat room, the system allows users to chat with each other. But their sentences will be modified and become sentences that are nonsense. The chatting will also be pronounced in different accent. Besides, the system stores all the words in the database, categorized into different word types. In the chat room, all the words will be replaced by the words in the same category. But the problem is that most of the time, the sentences don't make much sense."],
+      "gallery":["../images/swerdz/1.jpg","../images/swerdz/2.jpg","../images/swerdz/3.jpg","../images/swerdz/4.jpg","../images/swerdz/5.jpg"],
+      "github": "https://github.com/LucienHuang/Swerdz"
    },
    {
       "title":"Cannon Man",
@@ -132,7 +161,8 @@
       "background":"./images/equeue/bg.jpg",
       "thumbnail":"../images/equeue/tn.jpg",
       "time":"2014 Winter"
-   },{
+   },
+   {
       "title":"postCard",
       "background":"./images/postcard/bg.jpg",
       "thumbnail":"../images/postcard/tn.jpg",
@@ -154,7 +184,21 @@
          "<a href='https://marvelapp.com/project/1746322/' style='color: rgb(255,100,100); font-size: 18px;' target='view_window'>MarvelApp</a>"
       ],
       "gallery":["../images/postcard/1.jpg","../images/postcard/2.jpg","../images/postcard/3.jpg","../images/postcard/4.jpg"],
-      "video":"https://www.youtube.com/embed/yxWuxK3HoyM"
+      "video":"https://www.youtube.com/embed/cr2QgEClKhU"
+   },
+   {
+      "title":"Compile Youth",
+      "background":"./images/compileyouth/bg.jpg",
+      "thumbnail":"../images/compileyouth/tn.jpg",
+      "design":"Physical book",
+      "time":"2016 Summer",
+      "responsibility": "Designer",
+      "type": "School yearbook",
+      "skills": "Adobe Creative Cloud",
+      "final": "Printed book",
+      "concept":["This is the yearbook for students graduated from School of Software Engineering, Tongji University in 2016 and faculties."
+      ,""],
+      "gallery":["../images/compileyouth/1.jpg","../images/compileyouth/2.jpg","../images/compileyouth/3.jpg","../images/compileyouth/4.jpg"]
    },
    {
       "title":"Emoji Bot",
