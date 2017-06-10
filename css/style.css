@@ -11,6 +11,15 @@ body{
     overflow-y: scroll;
 }
 
+body::-webkit-scrollbar{
+    width: 6px;
+    background-color: rgb(30,30,30);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255,100,100);
+}
+
 #body-container{
     width:100%;
     margin-left:0%;
@@ -804,6 +813,15 @@ body{
     background:rgba(0,0,0,0);
     overflow: auto;
     display: flex;
+}
+
+#menu-container::-webkit-scrollbar{
+    width: 6px;
+    background-color: rgba(30,30,30,0);
+}
+
+#menu-container::-webkit-scrollbar-thumb {
+    background-color: rgb(255,255,255);
 }
 
 .menu-col{
