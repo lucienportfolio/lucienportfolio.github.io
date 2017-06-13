@@ -6,7 +6,7 @@
       "title":"Palimpsest",
       "background":"./images/palimpsest/bg.jpg",
       "thumbnail":"../images/palimpsest/tn.jpg",
-      "design":"iOS App design + prototyping",
+      "design":"iOS App design + Prototyping",
       "time":"2017 Spring",
       "responsibility": "Individual project",
       "type": "School project",
@@ -102,6 +102,25 @@
       "video":"https://www.youtube.com/embed/YRxUPcOOzkg?rel=0&amp;showinfo=0"
    },
    {
+      "title":"Jam!®",
+      "background":"./images/jam/bg.jpg",
+      "thumbnail":"../images/jam/tn.jpg",
+      "design":"iOS App design + Prototyping",
+      "time":"2017 Spring",
+      "responsibility": "Interface designer / Programmer",
+      "type": "School project",
+      "skills": "Adobe Creative Cloud, Swift, Google Maps API",
+      "final": "A social travel APP based on iOS, related server-side program and project documentation.",
+      "concept":["Sometimes we think we know a lot about the cities we live in. But actually, there are still some places that we've never been to in the cities. They can be really surprising, different and fascinating. During the time I live and study in Shanghai, I went to a lot of places and every time I went to a new place, I felt that I knew the city better. I didn't realize that Shanghai has so many different cultures. Some places are very flourishing, some are old, some are artistic... But they are all special and they make the city Shanghai. So I want to encourage people to go out, to know the city's culture and to seek the beauty of the city."
+      ,"So the way I wanted to push people was to make an App. Since I noticed that people are more and more relying on mobile applications and they like to share and \"compete\" with their friends. Also, a mobile application can better track where the user has or has not been to. So we built a server and an application to realize the idea."
+      ,"The first thing we did was summing up the requirements of users and functions the app should have. using this app, users can explore the city by lighting up the map, which is just like how exploration is like in computer games. And users can know where they have been to and how much percentage of the city they have explored. Also, users can share their experience, feelings and comments on certain places with other people so that they can read the comments and decide where they want to go. Users need to light up the position by taking a picture, and the system knows where they are according to their GPS information."
+      ,"We had a really hard time developing the algorithm of dividing the city map. Because there are some places that are more touristy, and some more boring and unworthy of traveling to. The first idea was to dividing the map in irregular shapes. But it was impossible to store the shapes and to determine which area the users were in. Then, we decided to use circles because we could just store the position of the center and the radius to determine an area, which was a really good solution. And the reason why we just made the map of Shanghai was that it took a lot of time for us to draw on the map and to record the information of each area manually."
+      ,"The project had some flaws. We could spend more time thinking about how to divide the map automatically because the dividing was too subject."],
+      "gallery":["../images/jam/1.jpg","../images/jam/2.jpg","../images/jam/3.jpg"],
+      "video":"https://www.youtube.com/embed/iME-yT5suAA?rel=0&amp;showinfo=0",
+      "github": "https://github.com/LucienHuang/TheJamApp"
+   },
+   {
       "title":"Green Funeral",
       "background":"./images/greenfuneral/bg.jpg",
       "thumbnail":"../images/greenfuneral/tn.jpg",
@@ -149,20 +168,6 @@
       "github": "https://github.com/LucienHuang/Swerdz"
    },
    {
-      "title":"Cannon Man",
-      "design":"Game",
-      "background":"./images/cannonman/bg.jpg",
-      "thumbnail":"../images/cannonman/tn.jpg",
-      "time":"2015 Spring"
-   },
-   {
-      "title":"EQueue",
-      "design":"iOS App",
-      "background":"./images/equeue/bg.jpg",
-      "thumbnail":"../images/equeue/tn.jpg",
-      "time":"2014 Winter"
-   },
-   {
       "title":"postCard",
       "background":"./images/postcard/bg.jpg",
       "thumbnail":"../images/postcard/tn.jpg",
@@ -185,6 +190,20 @@
       ],
       "gallery":["../images/postcard/1.jpg","../images/postcard/2.jpg","../images/postcard/3.jpg","../images/postcard/4.jpg"],
       "video":"https://www.youtube.com/embed/cr2QgEClKhU"
+   },
+   {
+      "title":"Cannon Man",
+      "design":"Game",
+      "background":"./images/cannonman/bg.jpg",
+      "thumbnail":"../images/cannonman/tn.jpg",
+      "time":"2015 Spring"
+   },
+   {
+      "title":"EQueue",
+      "design":"iOS App",
+      "background":"./images/equeue/bg.jpg",
+      "thumbnail":"../images/equeue/tn.jpg",
+      "time":"2014 Winter"
    },
    {
       "title":"Compile Youth",
