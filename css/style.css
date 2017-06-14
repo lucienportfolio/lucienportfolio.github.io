@@ -284,7 +284,7 @@ body::-webkit-scrollbar-thumb {
 
 #big-title a:hover{
     /*color:rgba(255,35,35,1);*/
-    border:solid 3px black;
+    /*border:solid 3px black;*/
 }
 
 #logo-animation{

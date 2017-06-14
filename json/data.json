@@ -27,14 +27,14 @@
       "I’m designing this App mainly because I think fan arts should be respected and shared. Fan arts sometimes have very dynamic views. I think fan art is also a way of telling a fan fiction because artists would draw something like Spock and Kirk making out and Harry Potter becoming a powerful little girl, we can see characters having different races, sexualities and genders. And it’s a visual way of expressing their thoughts.",
          "<a style='font-size:16px; line-height:28px; color:rgb(255,100,100);' href='https://invis.io/MCC3GC78P' target='view_window'>Try Echo prototype on InVision</a>"],
       "gallery":["../images/palimpsest/1.jpg","../images/palimpsest/2.jpg","../images/palimpsest/3.jpg","../images/palimpsest/4.png"],
-      "video":"https://www.youtube.com/embed/zOtXhishv9U",
+      "video":"https://www.youtube.com/embed/zOtXhishv9U?rel=0&amp;showinfo=0",
       "github":"https://github.com/LucienHuang/Comet"
    },
    {
       "title":"Infinite Dreams",
       "background":"./images/infinitedreams/bg.jpg",
       "thumbnail":"../images/infinitedreams/tn.gif",
-      "design":"Installation+Creative coding",
+      "design":"Installation + Creative coding",
       "time":"2016 Winter",
       "responsibility": "Individual project",
       "type": "School project",
@@ -49,7 +49,7 @@
          "<span style='font-size:20px; line-height:28px; color:rgb(255,185,185);'>Dream Scenarios</span>",
          "<div class='small-videos'><iframe width='29%' height='100%' frameborder='0' src='https://www.youtube.com/embed/eIWlm4P3M8o?showinfo=0' allowfullscreen></iframe><iframe width='29%' height='100%' frameborder='0' src='https://www.youtube.com/embed/HD-OLJOYKVc?showinfo=0' allowfullscreen></iframe><iframe width='29%' height='100%' frameborder='0' src='https://www.youtube.com/embed/Ydlv6bO5QmE?showinfo=0' allowfullscreen></iframe></div>"],
       "gallery":["../images/infinitedreams/1.jpg","../images/infinitedreams/2.jpg","../images/infinitedreams/3.jpg","../images/infinitedreams/4.jpg","../images/infinitedreams/5.jpg","../images/infinitedreams/6.jpg","../images/infinitedreams/7.jpg","../images/infinitedreams/8.jpg","../images/infinitedreams/9.jpg","../images/infinitedreams/10.jpg","../images/infinitedreams/11.jpg","../images/infinitedreams/12.jpg","../images/infinitedreams/13.jpg","../images/infinitedreams/14.jpg"],
-      "video":"https://www.youtube.com/embed/yxWuxK3HoyM",
+      "video":"https://www.youtube.com/embed/yxWuxK3HoyM?rel=0&amp;showinfo=0",
       "github":"https://github.com/LucienHuang/Infinite-Dreams---Alice-Bounce"
    },
    {
@@ -65,7 +65,7 @@
       "concept":["This project is based on Arduino. The object is a cubic lamp that generates changing lights that gives different feelings. There is no button on the lamp and the user can rotate the lamp to interact with it. If the lamp is rotated clockwise, it can be turned on. And if it's rotated anti-clockwise, it can be turned off. When the lamp is on, rotating it clockwise again can change the light mode of the lamp. Also, when the lamp is landed on different planes, the lighting mode will be different. Since the cube has 6 planes, it has 6 modes of light, namely, Fire, Chroma, Wave, Heartbeat, Rainbow and Star. In every mode, there are also 4 different lighting color mode and speed mode.",
             "I used a DotStar LED strip and an accelerometer to realize the interaction."],
       "gallery":["../images/lumiere/1.jpg","../images/lumiere/2.jpg","../images/lumiere/3.jpg","../images/lumiere/4.jpg","../images/lumiere/5.jpg","../images/lumiere/6.gif"],
-      "video":"https://www.youtube.com/embed/vu8BOvXof2s",
+      "video":"https://www.youtube.com/embed/vu8BOvXof2s?rel=0&amp;showinfo=0",
       "github": "https://github.com/LucienHuang/Lumiere/blob/master/_16.12.10_Final_2.ino"
    },
    {
@@ -99,7 +99,24 @@
       ,"We had a really hard time developing the algorithm of dividing the city map. Because there are some places that are more touristy, and some more boring and unworthy of traveling to. The first idea was to dividing the map in irregular shapes. But it was impossible to store the shapes and to determine which area the users were in. Then, we decided to use circles because we could just store the position of the center and the radius to determine an area, which was a really good solution. And the reason why we just made the map of Shanghai was that it took a lot of time for us to draw on the map and to record the information of each area manually."
       ,"The project had some flaws. We could spend more time thinking about how to divide the map automatically because the dividing was too subject."],
       "gallery":["../images/lightup/1.jpg","../images/lightup/2.jpg","../images/lightup/3.jpg"],
+      "colab": "Collaboration with Hu Yonghao, Yang Yuxin, Cai Jie and Chen Zhuo",
       "video":"https://www.youtube.com/embed/YRxUPcOOzkg?rel=0&amp;showinfo=0"
+   },
+   {
+      "title":"Unlocking the Bargello",
+      "background":"./images/utb/bg.jpg",
+      "thumbnail":"../images/utb/tn.jpg",
+      "design":"Museum Smart Audio Guide Design + Prototyping",
+      "time":"2017 Spring",
+      "responsibility": "Interface designer / Programmer / Media editor",
+      "type": "Digitize Museum Experience Project",
+      "skills": "Adobe Creative Cloud, Javascript",
+      "final": "A smart audio guide designed for Bargello Museum in Florence",
+      "concept":[""],
+      "gallery":["../images/utb/1.jpg","../images/utb/2.jpg","../images/utb/3.jpg","../images/utb/4.jpg"],
+      "video":"https://www.youtube.com/embed/tVbQgic6wj4?rel=0&amp;showinfo=0",
+      "colab": "Collaboration with Michael Dylan Negri, Zahra Sadjadi and Tala Alghamdi",
+      "github": "https://github.com/LucienHuang/TheJamApp"
    },
    {
       "title":"Jam!®",
@@ -111,13 +128,11 @@
       "type": "School project",
       "skills": "Adobe Creative Cloud, Swift, Google Maps API",
       "final": "A social travel APP based on iOS, related server-side program and project documentation.",
-      "concept":["Sometimes we think we know a lot about the cities we live in. But actually, there are still some places that we've never been to in the cities. They can be really surprising, different and fascinating. During the time I live and study in Shanghai, I went to a lot of places and every time I went to a new place, I felt that I knew the city better. I didn't realize that Shanghai has so many different cultures. Some places are very flourishing, some are old, some are artistic... But they are all special and they make the city Shanghai. So I want to encourage people to go out, to know the city's culture and to seek the beauty of the city."
-      ,"So the way I wanted to push people was to make an App. Since I noticed that people are more and more relying on mobile applications and they like to share and \"compete\" with their friends. Also, a mobile application can better track where the user has or has not been to. So we built a server and an application to realize the idea."
-      ,"The first thing we did was summing up the requirements of users and functions the app should have. using this app, users can explore the city by lighting up the map, which is just like how exploration is like in computer games. And users can know where they have been to and how much percentage of the city they have explored. Also, users can share their experience, feelings and comments on certain places with other people so that they can read the comments and decide where they want to go. Users need to light up the position by taking a picture, and the system knows where they are according to their GPS information."
-      ,"We had a really hard time developing the algorithm of dividing the city map. Because there are some places that are more touristy, and some more boring and unworthy of traveling to. The first idea was to dividing the map in irregular shapes. But it was impossible to store the shapes and to determine which area the users were in. Then, we decided to use circles because we could just store the position of the center and the radius to determine an area, which was a really good solution. And the reason why we just made the map of Shanghai was that it took a lot of time for us to draw on the map and to record the information of each area manually."
-      ,"The project had some flaws. We could spend more time thinking about how to divide the map automatically because the dividing was too subject."],
-      "gallery":["../images/jam/1.jpg","../images/jam/2.jpg","../images/jam/3.jpg"],
+      "concept":["",
+      ""],
+      "gallery":["../images/jam/1.jpg","../images/jam/2.jpg","../images/jam/3.jpg","../images/jam/4.jpg"],
       "video":"https://www.youtube.com/embed/iME-yT5suAA?rel=0&amp;showinfo=0",
+      "colab": "Collaboration with Michael Dylan Negri",
       "github": "https://github.com/LucienHuang/TheJamApp"
    },
    {
@@ -150,6 +165,7 @@
       "concept":["The topic for this project is instruction sets. So we were supposed to set up an interactive installation in a public place and observe how people interact with it. The outcome was quite successful and the result reached our expectations. At first, we wanted to use some AR techniques to let people look at the world differently. But then, we thought \"why don't we make some glasses or goggles so it would be different for users to look when they are wearing them?\" And that's when the final idea came up. But when we tested drawing something on a pair of glasses and looking through them, it was impossible to see both drawings on the glasses and the view outside because the drawings were too close to our eyes. So we changed our ideas to making cube helmets.",
       "We set up a few cubes and hanged them on the trees. The cubes were designed so that people can put their heads inside and look at the outside. The cubes are designed differently so that it would be different experiences for children to look."],
       "gallery":["../images/insideout/1.jpg","../images/insideout/2.jpg","../images/insideout/3.jpg","../images/insideout/4.jpg","../images/insideout/5.jpg"],
+      "colab": "Collaboration with Pornsima Duangratana, Huang Nan and Sydney Adams",
       "video":"https://www.youtube.com/embed/gZZr-CjkUGI?rel=0&amp;showinfo=0"
    },
    {
@@ -165,6 +181,7 @@
       "concept":["This project aimed to discuss the disconnection when people communicate with each other using technologies. And we exaggerated the disconnection to see whether people enjoy communicating with others with words that make sense or they can enjoy it even when they can't really understand each other.",
          "In this chat room, the system allows users to chat with each other. But their sentences will be modified and become sentences that are nonsense. The chatting will also be pronounced in different accent. Besides, the system stores all the words in the database, categorized into different word types. In the chat room, all the words will be replaced by the words in the same category. But the problem is that most of the time, the sentences don't make much sense."],
       "gallery":["../images/swerdz/1.jpg","../images/swerdz/2.jpg","../images/swerdz/3.jpg","../images/swerdz/4.jpg","../images/swerdz/5.jpg"],
+      "colab": "Collaboration with Zahra Sadjadi and Karla Polo-Garcia",
       "github": "https://github.com/LucienHuang/Swerdz"
    },
    {
@@ -189,21 +206,38 @@
          "<a href='https://marvelapp.com/project/1746322/' style='color: rgb(255,100,100); font-size: 18px;' target='view_window'>MarvelApp</a>"
       ],
       "gallery":["../images/postcard/1.jpg","../images/postcard/2.jpg","../images/postcard/3.jpg","../images/postcard/4.jpg"],
-      "video":"https://www.youtube.com/embed/cr2QgEClKhU"
+      "video":"https://www.youtube.com/embed/cr2QgEClKhU?rel=0&amp;showinfo=0"
    },
    {
       "title":"Cannon Man",
       "design":"Game",
       "background":"./images/cannonman/bg.jpg",
       "thumbnail":"../images/cannonman/tn.jpg",
-      "time":"2015 Spring"
+      "time":"2015 Spring",
+      "responsibility": "UX Designer, Graphic Designer, Developer",
+      "type": "Game design project",
+      "skills": "Node.js, JavaScript, Socket.io, Google natual language API",
+      "final": "A chat room that keep record of words that users have put in and convert the words into other words using the same syntax",
+      "concept":[""],
+      "gallery":["../images/swerdz/1.jpg","../images/swerdz/2.jpg","../images/swerdz/3.jpg","../images/swerdz/4.jpg","../images/swerdz/5.jpg"],
+      "colab": "Collaboration with Hu Yonghao and Chen Zhuo",
+      "github": "https://github.com/LucienHuang/Swerdz",
+      "video":"https://www.youtube.com/embed/CpOKpoJ7bIk?rel=0&amp;showinfo=0"
    },
    {
       "title":"EQueue",
       "design":"iOS App",
       "background":"./images/equeue/bg.jpg",
       "thumbnail":"../images/equeue/tn.jpg",
-      "time":"2014 Winter"
+      "time":"2014 Winter",
+      "responsibility": "Developer",
+      "type": "School project",
+      "skills": "Node.js, JavaScript, Socket.io, Google natual language API",
+      "final": "A chat room that keep record of words that users have put in and convert the words into other words using the same syntax",
+      "concept":[""],
+      "gallery":["../images/swerdz/1.jpg","../images/swerdz/2.jpg","../images/swerdz/3.jpg","../images/swerdz/4.jpg","../images/swerdz/5.jpg"],
+      "colab": "Collaboration with Yang Yuxin, Cai Jie and Guan Qingchen",
+      "github": "https://github.com/LucienHuang/Swerdz"
    },
    {
       "title":"Compile Youth",
@@ -232,6 +266,7 @@
       "concept":["We began this project by first formulating an issue that we felt inspired to address. We are looking at the many cases where technology is collecting seemingly random bits of information and exposing this practice as an invasion of our privacy whether we cognizant of it or not. We decided that we needed a method to display it in a public environment to embellish on growing awareness of this disregard for our privacy. Thus, the (invasive) “Privacy Twitter Bot” was conceived. We have created a platform that can run in the background on your web browser while recording your facial expressions as you use your computer. The information that is taken will then convert into an emoticon or emoji and post it to twitter every second. This stream of posts will allow anyone who follows the Privacy Twitter Bot to know how the user is feeling as they go about their work, education, or recreational use of their time at a computer. ",
          "<a href='https://twitter.com/PrivateDataBot' style='color: rgb(255,100,100); font-size: 18px;' target='view_window'>View the twitterbot here</a>"],
       "gallery":["../images/emojibot/1.jpg","../images/emojibot/2.jpg","../images/emojibot/3.jpg"],
+      "colab": "Collaboration with Michael Dylan Negri",
       "github": "https://github.com/LucienHuang/PrivacyTwitterBot"
    },
    {
@@ -239,6 +274,14 @@
       "design":"Physical computing",
       "background":"./images/lighteater/bg.jpg",
       "thumbnail":"../images/lighteater/tn.jpg",
-      "time":"2014 Winter"
+      "time":"2014 Winter",
+      "responsibility": "Developer",
+      "type": "School project",
+      "skills": "Node.js, JavaScript, Socket.io, Google natual language API",
+      "final": "A chat room that keep record of words that users have put in and convert the words into other words using the same syntax",
+      "concept":[""],
+      "gallery":["../images/swerdz/1.jpg","../images/swerdz/2.jpg","../images/swerdz/3.jpg","../images/swerdz/4.jpg","../images/swerdz/5.jpg"],
+      "github": "https://github.com/LucienHuang/Swerdz",
+      "video":"https://www.youtube.com/embed/Z7pf52MMJKA?rel=0&amp;showinfo=0"
    }
 ]

@@ -46,6 +46,7 @@ var fetchData = $.getJSON("../json/data.json", function(data){
                     "concept": info["concept"],
                     "gallery": info["gallery"],
                     "video": info["video"],
+                    "colab": info["colab"],
                     "github": info["github"]
                 }
             )
@@ -118,6 +119,12 @@ function loadAll(iCount){
     $('#proj-type').html(worksContent[iCount].type);
     $('#proj-skills').html(worksContent[iCount].skills);
     $('#proj-final').html(worksContent[iCount].final);
+    if(worksContent[iCount].colab!=undefined){
+        $('#proj-colab').html(worksContent[iCount].colab);
+    }else{
+        $('#proj-colab')[0].style.visibility="hidden";
+    }
+
     if(worksContent[iCount].github!=undefined){
         $('#proj-github')[0].href=worksContent[iCount].github;
     }else{

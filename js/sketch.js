@@ -38,8 +38,8 @@ function setup(){
       igreen.push(235);
       iblue.push(20);
     }else{
-      ired.push(40);
-      igreen.push(205);
+      ired.push(20);
+      igreen.push(215);
       iblue.push(255);
     }
   }
